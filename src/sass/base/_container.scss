@@ -5,8 +5,12 @@
 
   outline: 1px solid tomato;
 
+  @media screen and (max-width: 479.98px) {
+    width: 100%;
+  }
+
   @include mq('mobile') {
-    max-width: 320px;
+    max-width: 480px;
   }
 
   @include mq('tablet') {
