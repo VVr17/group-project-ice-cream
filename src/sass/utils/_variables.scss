@@ -1,0 +1,23 @@
+:root {
+  // FONTS
+  --main-font: DM Sans, sans-serif;
+  --secondary-font: Titan One, cursive;
+  --main-font-weight: 500;
+
+  // COLORS
+  --accent-color: #d41443;
+  --secondary-accent-color: #ffa5ba;
+  --white-color: #ffffff;
+
+  // text colors
+  --main-black-text-color: #000000;
+  --secondary-text-color: #907e82;
+
+  // background color
+  --main-background-color: #ffb8ca;
+  --second-background-color: #fff5f6;
+  --product-second-background-color: #f0d1a5;
+  --product-third-background-color: #c2e297;
+
+  --transition-timing: cubic-bezier(0.4, 0, 0.2, 1);
+}
