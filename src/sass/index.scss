@@ -1,13 +1,13 @@
 // @import './example';
 
+@import './utils/variables';
+@import './utils/mixin';
+@import './utils/visually-hidden';
+
 @import './base/common';
 @import './base/body';
 @import './base/container';
 @import './base/reset-styles';
-
-@import './utils/variables';
-@import './utils/mixin';
-@import './utils/visually-hidden';
 
 @import './componets/logo';
 @import './componets/button';
