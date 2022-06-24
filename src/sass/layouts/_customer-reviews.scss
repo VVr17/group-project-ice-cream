@@ -8,7 +8,7 @@
 }
 
 .customer-review__wrapper {
-  margin-bottom: 36px;
+  margin-bottom: 4px;
   padding-top: 43px;
   padding-bottom: 26px;
   padding-left: 60px;
@@ -21,17 +21,12 @@
 }
 
 .customer-review__name::before {
-  content: '\2022 \2022 \2022';
-  position: absolute;
-  top: -40px;
-  left: 50%;
-  transform: translate(-50%);
-  // background-image: url(../images/customer-reviews/ellipse.svg);
-  // background-position: center;
-  // background-size: cover;
-
-  letter-spacing: 10px;
-  font-size: 24px;
+  content: '';
   display: block;
-  color: var(--accent-color);
+  height: 4px;
+  margin-bottom: 16px;
+  background-image: url(../images/customer-reviews/review-circles.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
