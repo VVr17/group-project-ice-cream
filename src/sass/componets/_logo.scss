@@ -1,13 +1,16 @@
 .logo__link {
   display: block;
   padding-top: 8px;
-}
-
-@media screen and (max-width: 767.98px) {
-  .logo__link-group {
-    display: none;
+  color: black;
+  &:hover,
+  &:focus {
+    fill: currentColor;
   }
 }
-.logo__link-group {
-  display: none;
+.logo__icon {
+  color: black;
+  &:hover,
+  &:focus {
+    fill: currentColor;
+  }
 }
