@@ -1,7 +1,14 @@
+.header {
+  background-color: var(--main-background-color);
+}
+
+.header__navigation {
+  display: none;
+}
+
 .container {
   @extend .container;
   display: flex;
-  background-color: var(--main-background-color);
 }
 .header__button {
   display: none;
