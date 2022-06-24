@@ -1,0 +1,37 @@
+.customer-review {
+  text-align: center;
+}
+
+.customer-review__picture {
+  margin: 0 auto;
+  margin-bottom: 32px;
+}
+
+.customer-review__wrapper {
+  margin-bottom: 36px;
+  padding-top: 43px;
+  padding-bottom: 26px;
+  padding-left: 60px;
+  padding-right: 60px;
+  background-color: var(--customer-review-card-background-color);
+}
+
+.customer-review__name {
+  position: relative;
+}
+
+.customer-review__name::before {
+  content: '\2022 \2022 \2022';
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translate(-50%);
+  // background-image: url(../images/customer-reviews/ellipse.svg);
+  // background-position: center;
+  // background-size: cover;
+
+  letter-spacing: 10px;
+  font-size: 24px;
+  display: block;
+  color: var(--accent-color);
+}
