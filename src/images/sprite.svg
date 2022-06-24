@@ -25,7 +25,6 @@
     <path fill="#d41443" style="fill: var(--color2, #d41443)" d="M22.191 32h-8.791l16-16.044h8.791l-16 16.044z"></path>
     <path fill="#d31342" style="fill: var(--color5, #d31342)" d="M32.325 11.604h-32.325v8.791h32.325v-8.791z"></path>
   </symbol>
-  <!-- Circle -->
   <symbol id="circle" viewBox="0 0 32 32">
     <path d="M32 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
   </symbol>
