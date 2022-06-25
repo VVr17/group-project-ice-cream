@@ -14,5 +14,17 @@
   }
 }
 
-// .section__title {
-// }
+.section__uppertitle {
+  font-size: 18px;
+  line-height: 1.166;
+  color: var(--secondary-accent-color);
+}
+
+.section__title {
+  margin-top: 15px;
+
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 1.147;
+  color: var(--accent-color);
+}
