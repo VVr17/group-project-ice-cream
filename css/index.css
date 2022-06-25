@@ -135,6 +135,22 @@ p {
   color: var(--accent-color);
 }
 
+.section__uppertitle {
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.166;
+  color: var(--secondary-accent-color);
+}
+
+.section__title {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 1.147;
+  color: var(--accent-color);
+}
+
 .products {
   font-family: var(--secondary-font);
   text-align: center;

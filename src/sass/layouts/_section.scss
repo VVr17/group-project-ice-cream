@@ -15,7 +15,9 @@
 }
 
 .section__uppertitle {
+  font-family: var(--secondary-font);
   font-size: 18px;
+  text-align: center;
   line-height: 1.166;
   color: var(--secondary-accent-color);
 }
@@ -23,8 +25,11 @@
 .section__title {
   margin-top: 15px;
 
+  font-family: var(--secondary-font);
   font-size: 34px;
   font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
   line-height: 1.147;
   color: var(--accent-color);
 }
