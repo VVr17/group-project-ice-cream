@@ -1,0 +1,104 @@
+@media screen and (max-width: 1199.98px) {
+  .mobile-menu {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+
+    top: 0;
+    right: 0;
+
+    padding-top: 60px;
+
+    width: 100%;
+    @media screen and (min-width: 320px) {
+      width: 320px;
+    }
+    height: 100%;
+
+    background-color: var(--menu-bacground);
+    overflow-y: scroll;
+
+    visibility: hidden;
+    transform: translateY(-100%);
+
+    transition: transform 300ms var(--transition-timing) 200ms,
+      visibility 250ms var(--transition-timing) 200ms;
+    &.is-open {
+      visibility: visible;
+      transform: translateY(0);
+      filter: drop-shadow(-8px 0px 20px rgba(0, 0, 0, 0.25));
+    }
+  }
+}
+
+@media screen and (min-width: 1199.99px) {
+  .mobile__button {
+    cursor: pointer;
+    transition: background-color 250ms var(--transition-timing) 200ms,
+      color 250ms var(--transition-timing) 300ms;
+    display: none;
+  }
+  .menu__content {
+    display: flex;
+    width: 100%;
+  }
+}
+
+.mobile-button {
+  position: relative;
+  top: 20px;
+  z-index: 20;
+
+  width: 30px;
+  height: 30px;
+
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+
+  fill: var(--accent-color);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: fill 250ms var(--transition-timing) 200ms;
+
+  &:hover,
+  &:focus {
+    fill: var(--white-color);
+  }
+}
+
+.mobile-button .mobile-button__icon--close {
+  display: none;
+}
+
+.mobile-button.is-open .mobile-button__icon--close {
+  display: block;
+}
+.mobile-button.is-open .mobile-button__icon--menu {
+  display: none;
+}
+
+.mobile-menu__item {
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+  width: 100%;
+}
+.mobile-menu__link {
+  padding-left: 20px;
+
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.28;
+
+  color: var(--white-color);
+
+  transition: color 250ms var(--transition-timing) 300ms;
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+.mobile-menu__link--current {
+  color: var(--accent-color);
+}

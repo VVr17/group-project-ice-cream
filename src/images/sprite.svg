@@ -60,11 +60,14 @@
     </path>
   </symbol>
 
-  <!-- mobile-meun -->
+  <!-- Mobile-menu -->
   <symbol id="icon-burger" viewBox="0 0 46 32">
     <path fill="none" stroke="#d41443" style="stroke: var(--color1, #d41443)" stroke-linejoin="miter"
       stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.2857"
       d="M0 2.291h45.732M0 16.011h45.732M0 29.73h45.732"></path>
+  </symbol>
+  <symbol id="icon-menu-color" viewBox="0 0 48 32">
+    <path d="M0 5.333v-5.333h48v5.333h-48zM0 18.667h48v-5.333h-48v5.333zM0 32h48v-5.333h-48v5.333z"></path>
   </symbol>
   <symbol id="icon-close" viewBox="0 0 32 32">
     <path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="miter" stroke-linecap="butt"
