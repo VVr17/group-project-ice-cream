@@ -60,108 +60,113 @@
   &:focus {
     fill: var(--white-color);
   }
+  // @media screen and (min-width: 500px) {
+  //   position: fixed;
+  //   margin: 0;
+  //   right: 100px;
+  // }
 }
-.mobile__button .menu__icon--vector {
+.mobile__button .mobile-button__icon--close {
   display: none;
 }
 
-.mobile__button.is-open .menu__icon--vector {
+.mobile__button.is-open .mobile-button__icon--close {
   display: block;
 }
-.mobile__button.is-open .menu__icon--menu {
+.mobile__button.is-open .mobile-button__icon--menu {
   display: none;
 }
 
-.menu-icon {
-  width: 20px;
-  height: 12px;
-  position: fixed;
-  top: 0;
-  right: 0;
-  margin: 10px 15px;
-  transform: scale(0.8);
-  padding: 0;
-  cursor: pointer;
-  z-index: 20;
-}
-.menu-bar {
-  width: 50px;
-  height: 5px;
-  background: rgb(190, 190, 190);
-  position: absolute;
-  transition: all 0.3s;
-}
-.menu-bar1 {
-  margin-top: 9px;
-}
-.menu-bar2 {
-  margin-top: 23px;
-}
-.menu-bar3 {
-  margin-top: 37px;
-}
-.menu-icon.hover .menu-bar1 {
-  transform: rotate(45deg) scaleX(0.7);
-  margin-top: 22px;
-}
-.menu-icon.hover .menu-bar2 {
-  opacity: 0;
-}
-.menu-icon.hover .menu-bar3 {
-  transform: rotate(-45deg) scaleX(0.7);
-  margin-top: 22px;
-}
+// .menu-icon {
+//   width: 20px;
+//   height: 12px;
+//   position: fixed;
+//   top: 0;
+//   right: 0;
+//   margin: 10px 15px;
+//   transform: scale(0.8);
+//   padding: 0;
+//   cursor: pointer;
+//   z-index: 20;
+// }
+// .menu-bar {
+//   width: 50px;
+//   height: 5px;
+//   background: rgb(190, 190, 190);
+//   position: absolute;
+//   transition: all 0.3s;
+// }
+// .menu-bar1 {
+//   margin-top: 9px;
+// }
+// .menu-bar2 {
+//   margin-top: 23px;
+// }
+// .menu-bar3 {
+//   margin-top: 37px;
+// }
+// .menu-icon.hover .menu-bar1 {
+//   transform: rotate(45deg) scaleX(0.7);
+//   margin-top: 22px;
+// }
+// .menu-icon.hover .menu-bar2 {
+//   opacity: 0;
+// }
+// .menu-icon.hover .menu-bar3 {
+//   transform: rotate(-45deg) scaleX(0.7);
+//   margin-top: 22px;
+// }
 
-.menu {
-  width: 320px;
-  height: 100%;
-  display: -webkit-flex;
-  display: flex;
-  flex-direction: column;
-}
-.menu-con {
-  -webkit-flex-grow: 1;
-  flex-basis: 0;
-  flex-grow: 1;
-  display: -webkit-flex;
-  display: flex;
-  justify-content: space-around;
-  position: relative;
-  top: -100%;
-  transition: all 0.5s;
-}
-.menu-con p:before {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  width: 100%;
-  height: 100%;
-  opacity: 1;
-  background: rgba(0, 0, 0, 0);
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-}
-.menu-con:hover p:before {
-  background: rgba(0, 0, 0, 0.2);
-}
-.menu-con p {
-  height: 20px;
-  align-self: center;
-  color: white;
-  font-size: 25px;
-  z-index: 2;
-  cursor: pointer;
-}
-@media screen and (max-width: 600px) {
-  .menu-con {
-    min-width: 50%;
-  }
-}
-@media screen and (max-width: 350px) {
-  .menu-con {
-    min-width: 100%;
-  }
-}
+// .menu {
+//   width: 320px;
+//   height: 100%;
+//   display: -webkit-flex;
+//   display: flex;
+//   flex-direction: column;
+// }
+// .menu-con {
+//   -webkit-flex-grow: 1;
+//   flex-basis: 0;
+//   flex-grow: 1;
+//   display: -webkit-flex;
+//   display: flex;
+//   justify-content: space-around;
+//   position: relative;
+//   top: -100%;
+//   transition: all 0.5s;
+// }
+// .menu-con p:before {
+//   content: '';
+//   display: block;
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   z-index: 1;
+//   width: 100%;
+//   height: 100%;
+//   opacity: 1;
+//   background: rgba(0, 0, 0, 0);
+//   -webkit-transition: all 0.5s;
+//   transition: all 0.5s;
+// }
+// .menu-con:hover p:before {
+//   background: rgba(0, 0, 0, 0.2);
+// }
+// .menu-con p {
+//   height: 20px;
+//   align-self: center;
+//   color: white;
+//   font-size: 25px;
+//   z-index: 2;
+//   cursor: pointer;
+// }
+// @media screen and (max-width: 600px) {
+//   .menu-con {
+//     min-width: 50%;
+//   }
+// }
+// @media screen and (max-width: 350px) {
+//   .menu-con {
+//     min-width: 100%;
+//   }
+// }
