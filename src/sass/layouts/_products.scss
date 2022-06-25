@@ -74,6 +74,7 @@
   font-family: var(--secondary-font);
   font-size: 20px;
   font-weight: 400;
+  text-transform: uppercase;
   line-height: 1.15;
   color: var(--white-color);
 }
@@ -109,16 +110,18 @@
   background-color: var(--white-color);
   border-radius: 50%;
   border-style: none;
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+
+  &:hover .products-card__icon,
+  &:focus .products-card__icon {
+    fill: var(--white-color);
+  }
 }
 
-.products-card__icon--ice-cream {
-  fill: var(--main-background-color);
-}
-
-.products-card__icon--ice-coffee {
-  fill: var(--product-second-background-color);
-}
-
-.products-card__icon--milkshakes {
-  fill: var(--product-third-background-color);
+.products-card__icon {
+  fill: var(--accent-color);
 }
