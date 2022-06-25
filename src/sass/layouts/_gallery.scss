@@ -1,0 +1,47 @@
+.gallery {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(to bottom, #FFF5F6 15%, #ffffff 15%, #ffffff 70%);
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        margin: -2px;   
+    }
+    &__item {
+        margin: 2px;
+    }
+    &__ice-1 {
+        align-self: center;
+        margin-top: 10px;
+    }
+    &__ice-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 7px;
+    }
+    &__ice-3 {
+        display: flex;
+        flex-direction: column;
+    }
+    &__ice-4 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    &__ice-5 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+    &__ice-6 {
+        align-self: center;
+        margin-top: 12px;
+
+    }
+   
+}
