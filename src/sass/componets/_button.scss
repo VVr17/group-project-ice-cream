@@ -7,7 +7,7 @@
   transition: background-color 250ms var(--transition-timing) 200ms,
     color 250ms var(--transition-timing) 300ms;
 
-  &--red {
+  &--white {
     color: var(--accent-color);
     background-color: var(--white-color);
     &:hover,
@@ -16,7 +16,7 @@
       background-color: var(--accent-color);
     }
   }
-  &--white {
+  &--red {
     color: var(--white-color);
     background-color: var(--accent-color);
     &:hover,
