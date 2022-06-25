@@ -1,6 +1,11 @@
-.section__about {
+.about {
     background-color: var(--second-background-color);
-
+    padding-bottom: 40px;
+      
+    @include mq('tablet') {
+        padding-bottom: 60px;
+    }
+      
 }
 
 .section__title--about{
