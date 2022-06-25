@@ -9,11 +9,48 @@
 
 .customer-review__wrapper {
   margin-bottom: 4px;
-  padding-top: 43px;
-  padding-bottom: 26px;
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-top: 74px;
+  padding-bottom: 17px;
+  padding-left: 50px;
+  padding-right: 50px;
   background-color: var(--customer-review-card-background-color);
+}
+
+.customer-review__gradient-wrapper {
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent,
+    #e1e1e1 1px,
+    transparent 1px,
+    transparent 31px,
+    #e1e1e1 1px,
+    transparent 1px,
+    transparent 31px,
+    #e1e1e1 1px,
+    transparent 1px,
+    transparent 31px,
+    #e1e1e1 1px,
+    transparent 1px,
+    transparent 31px,
+    #e1e1e1 1px,
+    transparent 1px,
+    transparent 31px,
+    #e1e1e1 1px,
+    transparent 1px,
+    transparent 31px,
+    #e1e1e1 1px,
+    transparent 1px,
+    transparent 31px,
+    #e1e1e1 1px,
+    transparent 1px,
+    transparent 31px,
+    #e1e1e1 1px,
+    transparent 1px,
+    transparent 31px,
+    #e1e1e1 1px,
+    transparent 1px,
+    transparent 31px
+  );
 }
 
 .customer-review__name {
