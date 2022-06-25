@@ -1,0 +1,29 @@
+.section__about {
+    background-color: var(--second-background-color);
+
+}
+
+.section__title--about{
+    margin-bottom: 32px;
+}
+
+.about__img{
+    margin-bottom: 40px;
+}
+
+.about__article {
+font-weight: var(--main-font-weight);
+font-size: 12px;
+line-height: 1.62;
+color: var(--secondary-text-color);
+width: 240px;
+}
+
+.about__text--black {
+    color: var(--main-black-text-color);
+    margin-bottom: 20px;
+}
+.about__text{
+    margin-bottom: 20px;
+    width: 230px;
+}
