@@ -1,5 +1,8 @@
+@import '../componets/modal/modal-slider';
+
 .customer-review {
   text-align: center;
+  padding-bottom: 16px;
 }
 
 .customer-review__picture {
@@ -8,12 +11,17 @@
 }
 
 .customer-review__wrapper {
-  margin-bottom: 4px;
+  display: flex;
+  margin-bottom: 16px;
   padding-top: 74px;
   padding-bottom: 17px;
   padding-left: 50px;
   padding-right: 50px;
   background-color: var(--customer-review-card-background-color);
+}
+
+.swiper-slide {
+  background: var(--white-color);
 }
 
 .customer-review__gradient-wrapper {
@@ -23,36 +31,18 @@
     transparent,
     #e1e1e1 1px,
     transparent 1px,
-    transparent 31px,
-    #e1e1e1 1px,
-    transparent 1px,
-    transparent 31px,
-    #e1e1e1 1px,
-    transparent 1px,
-    transparent 31px,
-    #e1e1e1 1px,
-    transparent 1px,
-    transparent 31px,
-    #e1e1e1 1px,
-    transparent 1px,
-    transparent 31px,
-    #e1e1e1 1px,
-    transparent 1px,
-    transparent 31px,
-    #e1e1e1 1px,
-    transparent 1px,
-    transparent 31px,
-    #e1e1e1 1px,
-    transparent 1px,
-    transparent 31px,
-    #e1e1e1 1px,
-    transparent 1px,
-    transparent 31px,
-    #e1e1e1 1px,
-    transparent 1px,
     transparent 31px
   );
+  padding-left: 15px;
+  padding-right: 8px;
+  padding-bottom: 9px;
 }
+
+// .customer-review__description {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+// }
 
 .customer-review__gradient-wrapper::before {
   position: absolute;
@@ -70,6 +60,22 @@
 
 .customer-review__name {
   position: relative;
+}
+
+.swiper-pagination {
+  margin-bottom: -16px;
+}
+
+.swiper-pagination-bullet {
+  background-color: white;
+  background-image: url(../images/icons/ellipse.svg);
+  background-size: contain;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: white;
+  background-image: url(../images/icons/home.svg);
+  background-size: contain;
 }
 
 .customer-review__name::before {
