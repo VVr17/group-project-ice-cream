@@ -16,13 +16,20 @@ font-weight: var(--main-font-weight);
 font-size: 12px;
 line-height: 1.62;
 color: var(--secondary-text-color);
-width: 240px;
+
+background-image: url(../images/about/about-bg_sm@1x.png);
+background-size: contain;
+background-repeat: no-repeat;
+
+background-position: center;
 }
 
 .about__text--black {
     color: var(--main-black-text-color);
     margin-bottom: 20px;
+    width: 240px;
 }
+
 .about__text{
     margin-bottom: 20px;
     width: 230px;
