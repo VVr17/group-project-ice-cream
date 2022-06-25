@@ -1,10 +1,117 @@
-<div class="swiper mySwiper">
-  <div class="swiper-wrapper">
-    <div class="swiper-slide">Slide 1</div>
-    <div class="swiper-slide">Slide 2</div>
-    <div class="swiper-slide">Slide 3</div>
+<button type="button" class="modal__open-button" data-modal-open>
+  Buy now
+</button>
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button class="modal__closing-button" type="button" data-modal-close>
+      close
+    </button>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <picture>
+            <source
+              srcset="
+                ./images/modal/ice-cream-modal.webp 1x,
+                ./images/modal/ice-cream-modal.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              srcset="
+                ./images/modal/ice-cream-modal.png 1x,
+                ./images/modal/ice-cream-modal.png 2x
+              "
+              type="image/png"
+            />
+
+            <img
+              class="modal-img"
+              src="./images/modal/ice-cream-modal.png"
+              alt="ice cream"
+              loading="lazy"
+            />
+          </picture>
+        </div>
+        <div class="swiper-slide">
+          <picture>
+            <source
+              srcset="
+                ./images/modal/ice-coffee-modal.webp 1x,
+                ./images/modal/ice-coffee-modal.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              srcset="
+                ./images/modal/ice-coffee-modal.png 1x,
+                ./images/modal/ice-coffee-modal.png 2x
+              "
+              type="image/png"
+            />
+
+            <img
+              class="modal-img"
+              src="./images/modal/ice-coffee-modal.png"
+              alt="ice cream"
+              loading="lazy"
+            />
+          </picture>
+        </div>
+        <div class="swiper-slide">
+          <picture>
+            <source
+              srcset="
+                ./images/modal/milkshakes-modal.webp 1x,
+                ./images/modal/milkshakes-modal.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              srcset="
+                ./images/modal/milkshakes-modal.png 1x,
+                ./images/modal/milkshakes-modal.png 2x
+              "
+              type="image/png"
+            />
+
+            <img
+              class="modal-img"
+              src="./images/modal/milkshakes-modal.png"
+              alt="ice cream"
+              loading="lazy"
+            />
+          </picture>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <p class="modal__text">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, nihil.
+    </p>
+    <form class="modal__form">
+      <label class="modal__form-field form-field"
+        >Name
+        <input class="form-input" type="text" name="name" />
+      </label>
+      <label class="modal__form-field form-field"
+        >Phone
+        <input class="form-input" type="tel" name="tel" />
+      </label>
+      <label class="modal__form-field form-field"
+        >Mail
+
+        <input class="form-input" type="email" name="email" />
+      </label>
+      <label class="modal__form-field form-field"
+        >Quantity
+
+        <input class="form-input" type="text" name="name" />
+      </label>
+
+      <button type="submit" class="modal__button button">Buy</button>
+    </form>
   </div>
-  <div class="swiper-button-next"></div>
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-pagination"></div>
 </div>
