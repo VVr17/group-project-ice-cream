@@ -1,0 +1,41 @@
+.about {
+    background-color: var(--second-background-color);
+    padding-bottom: 40px;
+      
+    @include mq('tablet') {
+        padding-bottom: 60px;
+    }
+      
+}
+
+.section__title--about{
+    margin-bottom: 32px;
+}
+
+.about__img{
+    margin-bottom: 40px;
+}
+
+.about__article {
+font-weight: var(--main-font-weight);
+font-size: 12px;
+line-height: 1.62;
+color: var(--secondary-text-color);
+
+background-image: url(../images/about/about-bg_sm@1x.png);
+background-size: contain;
+background-repeat: no-repeat;
+
+background-position: center;
+}
+
+.about__text--black {
+    color: var(--main-black-text-color);
+    margin-bottom: 20px;
+    width: 240px;
+}
+
+.about__text{
+    margin-bottom: 20px;
+    width: 230px;
+}
