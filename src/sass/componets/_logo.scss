@@ -1,15 +1,12 @@
 .logo {
   display: block;
   padding-top: 8px;
-  fill: var(--accent-color);
-  &:hover,
-  &:focus {
-    fill: var(--secondary-accent-color);
-  }
 }
 .logo__icon {
+  fill: var(--accent-color);
+  transition: fill 250ms var(--transition-timing) 200ms;
   &:hover,
   &:focus {
-    fill: var(--secondary-accent-color);
+    fill: var(--menu-bacground);
   }
 }

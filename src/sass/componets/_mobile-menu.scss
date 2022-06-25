@@ -34,6 +34,8 @@
 @media screen and (min-width: 1199.99px) {
   .mobile__button {
     cursor: pointer;
+    transition: background-color 250ms var(--transition-timing) 200ms,
+      color 250ms var(--transition-timing) 300ms;
     display: none;
   }
   .menu__content {
@@ -53,16 +55,19 @@
   margin: 0;
   margin-left: auto;
   padding: 0;
+
   fill: var(--accent-color);
   background-color: transparent;
   border: none;
   cursor: pointer;
+  transition: fill 250ms var(--transition-timing) 200ms;
 
   &:hover,
   &:focus {
     fill: var(--white-color);
   }
 }
+
 .mobile-button .mobile-button__icon--close {
   display: none;
 }
@@ -87,6 +92,8 @@
   line-height: 1.28;
 
   color: var(--white-color);
+
+  transition: color 250ms var(--transition-timing) 300ms;
   &:hover,
   &:focus {
     color: var(--accent-color);
