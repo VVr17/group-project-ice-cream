@@ -33,7 +33,7 @@
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	padding: 40px;
+	padding: 25px;
 
 	width: 100%;
 	max-width: 400px;
@@ -49,19 +49,15 @@
 
 
 .modal__open-button {
+	margin-left: auto;
+	margin-right: auto;
+
 	font-family: 'DM Sans';
 	font-style: normal;
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 21px;
-	display: flex;
-	align-items: center;
-	text-align: center;
 
-	color: #D41443;
-
-	display: flex;
-	justify-content: center;
 	align-items: center;
 	display: block;
 
@@ -73,7 +69,7 @@
 	border-radius: 22px;
 
 	background: #ffffff;
-	transition: color 250ms var(--transition-timing);
+	transition: color 250ms var(--transition-timing), border-color 250ms var(--transition-timing);
 	cursor: pointer;
 	color: #000000;
 
@@ -93,6 +89,7 @@
 	position: absolute;
 	right: 8px;
 	top: 8px;
+	z-index: 200;
 
 	width: 60px;
 	height: 30px;
@@ -102,15 +99,19 @@
 	border-radius: 50%;
 
 	background: var(--second-background-color);
-	transition: color 250ms var(--transition-timing);
+	transition: color 250ms var(--transition-timing),
+		border-color 250ms var(--transition-timing);
 	cursor: pointer;
 	color: #000000;
 
 	&:hover,
 	&:focus {
 		color: rgb(214, 57, 167);
+		border-color: rgb(214, 57, 167);
 	}
 }
+
+
 
 
 .swiper {
@@ -140,4 +141,103 @@
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+}
+
+// ТЕКСТ
+.modal__text {
+	font-family: 'DM Sans';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.76;
+
+
+	letter-spacing: 0.04em;
+}
+
+// ФОРМИ
+.modal__form {
+
+
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.modal__form-field {
+	display: flex;
+	flex-direction: column;
+
+	cursor: pointer;
+
+
+
+	font-family: 'DM Sans';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.94;
+	/* or 27px */
+
+	letter-spacing: 0.04em;
+
+	color: #907E82;
+}
+
+.modal__form-field:focus-within .form-input,
+.modal__form-field:hover .form-input {
+	border-color: rgb(214, 57, 167);
+}
+
+.modal__form-field:not(:first-child) {
+	margin-top: 12px;
+}
+
+.form-input {
+	width: 100%;
+	height: 40px;
+
+
+
+	border: 1px solid rgba(33, 33, 33, 0.2);
+	border-radius: 4px;
+
+	outline: none;
+
+	cursor: inherit;
+	transition: border-color 250ms var(--transition-timing);
+
+}
+
+.modal__button {
+	margin-top: 15px;
+	margin-left: auto;
+	margin-right: auto;
+
+	font-family: 'DM Sans';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 21px;
+
+	align-items: center;
+	display: block;
+
+	width: 160px;
+	height: 44px;
+
+	box-sizing: border-box;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 22px;
+
+	background: #ffffff;
+	transition: color 250ms var(--transition-timing), border-color 250ms var(--transition-timing);
+	cursor: pointer;
+	color: #000000;
+
+	&:hover,
+	&:focus {
+		color: rgb(214, 57, 167);
+		border-color: rgb(214, 57, 167);
+	}
 }
