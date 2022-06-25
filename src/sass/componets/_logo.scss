@@ -1,0 +1,12 @@
+.logo {
+  display: block;
+  padding-top: 8px;
+}
+.logo__icon {
+  fill: var(--accent-color);
+  transition: fill 250ms var(--transition-timing) 200ms;
+  &:hover,
+  &:focus {
+    fill: var(--menu-bacground);
+  }
+}
