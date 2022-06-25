@@ -1,11 +1,11 @@
 <section class="hero">
 <div class="container">
     <h1 class="hero__title">
-        Ice Cream made with <span class="hero__title-accent">Passion</span>
+        Ice Cream made with <span class="hero__title--accent">Passion</span>
     </h1>
 
-    <button class="hero__products">Products</button>
-    <button class="hero__about">How it's made</button>
+    <button class="button button--red" type="button">Products</button>
+    <button class="button button--white" type="button">How it's made</button>
 
     <div class="bio-eco">
         <picture>
@@ -28,28 +28,9 @@
             <img class="gallery-img image" src="./images/hero/hero_1med.png" alt="jug of milk" width="152"
               height="154" loading="lazy" />
         </picture>
-        <p class="bio-eco_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+        <p class="bio-eco__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
         <a href="" class="bio-eco__link">
-            <picture>
-            <source media="(min-width: 1200px)" srcset="
-                ./images/hero/hero_arrowlg.webp 1x,
-                ./images/hero/hero_arrowlg@2x.webp 2x
-              " type="image/webp" />
-            <source media="(min-width: 1200px)" srcset="
-                ./images/hero/hero_arrowlg.png 1x,
-                ./images/hero/hero_arrowlg@2x.png 2x
-              " type="image/png" />
-            <source media="(min-width: 768px)" srcset="
-                ./images/hero/hero_arrowmed.webp 1x,
-                ./images/hero/hero_arrowmed@2x.webp 2x
-              " type="image/webp" />
-            <source media="(min-width: 768px)" srcset="
-                ./images/hero/hero_arrowmed.png 1x,
-                ./images/hero/hero_arrowmed@2x.png 2x
-              " type="image/png" />
-            <img class="gallery-img image" src="./images/hero/hero_arrowmed.png" alt="arrow" width="18"
-              height="18" loading="lazy" />
-            </picture>
+            
         </a>
     </div>
 
@@ -85,8 +66,15 @@
     <div class="hero__circle"></div>
 
     <div class="amount">
-        <p class="amount_cafe"><span class="amount__accent">16</span>cafes</p>
-        <p class="amount_tracks"><span class="amount__accent">23</span>tracks</p>
+        <ul class="amount__list">
+            <li class="amount__item">
+                <p class="amount__description"><span class="amount__accent">16</span>cafes</p>
+            </li>
+            <li class="amount__item">
+                <p class="amount__description"><span class="amount__accent">23</span>tracks</p>
+            </li>
+        </ul>
+        
     </div>
 
     <div class="enticing">
