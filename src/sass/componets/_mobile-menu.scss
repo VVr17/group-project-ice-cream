@@ -33,6 +33,7 @@
 
 @media screen and (min-width: 1199.99px) {
   .mobile__button {
+    cursor: pointer;
     display: none;
   }
   .menu__content {
@@ -55,6 +56,8 @@
   fill: var(--accent-color);
   background-color: transparent;
   border: none;
+  cursor: pointer;
+
   &:hover,
   &:focus {
     fill: var(--white-color);
@@ -84,6 +87,10 @@
   line-height: 1.28;
 
   color: var(--white-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 .mobile-menu__link--current {
   color: var(--accent-color);
