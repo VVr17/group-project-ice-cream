@@ -1,0 +1,63 @@
+.products {
+  font-family: var(--secondary-font);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.products__label {
+  font-size: 18px;
+  line-height: 1.166;
+  color: var(--secondary-accent-color);
+}
+
+.products__title {
+  margin-top: 15px;
+
+  font-size: 34px;
+  line-height: 1.147;
+  color: var(--accent-color);
+}
+
+.products__list {
+  margin-top: 8px;
+}
+
+.products__item {
+  padding-top: 140px;
+}
+
+.products__card {
+  position: relative;
+
+  padding: 160px 40px 40px;
+  background-color: var(--main-background-color);
+  border-radius: 24px;
+}
+
+.products__name {
+  font-size: 20px;
+  line-height: 1.15;
+  color: var(--white-color);
+}
+
+.products__name::after {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  top: 215px;
+  left: 127px;
+  width: 26px;
+  height: 6px;
+  color: var(--white-color);
+  background-image: './images/products/dots.png';
+}
+
+.products__text {
+  margin-top: 70px;
+
+  font-family: var(--main-font);
+  font-weight: 700;
+  line-height: 1.52;
+  text-transform: none;
+  color: var(--white-color);
+}
