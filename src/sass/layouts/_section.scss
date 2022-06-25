@@ -6,6 +6,14 @@
   }
 }
 
+.section__about {
+  padding-bottom: 40px;
+
+  @include mq('tablet') {
+    padding-bottom: 60px;
+  }
+}
+
 .section__contacts {
   padding-bottom: 40px;
 
