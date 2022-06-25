@@ -17,6 +17,7 @@
 }
 
 .customer-review__gradient-wrapper {
+  position: relative;
   background-image: repeating-linear-gradient(
     to bottom,
     transparent,
@@ -51,6 +52,20 @@
     transparent 1px,
     transparent 31px
   );
+}
+
+.customer-review__gradient-wrapper::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  display: block;
+  width: 54px;
+  height: 40px;
+  background-image: url(../images/customer-reviews/inverted-commas.svg);
+  background-position: left top;
+  background-repeat: no-repeat;
+  transform: translateY(-100%);
 }
 
 .customer-review__name {
