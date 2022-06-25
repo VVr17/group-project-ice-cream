@@ -1,16 +1,15 @@
 .logo {
   display: block;
   padding-top: 8px;
-  color: black;
+  fill: var(--accent-color);
   &:hover,
   &:focus {
-    fill: currentColor;
+    fill: var(--secondary-accent-color);
   }
 }
 .logo__icon {
-  color: black;
   &:hover,
   &:focus {
-    fill: currentColor;
+    fill: var(--secondary-accent-color);
   }
 }
