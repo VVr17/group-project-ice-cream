@@ -58,7 +58,7 @@
 .hero__image {
     position: absolute;
     bottom: 0px;
-    left:117px;
+    left:calc(117px + (100% - 320px)/2);
     z-index: 10;
 }
 
@@ -70,7 +70,7 @@
     border-radius: 50%;
 
     position: absolute;
-    left: 36px;
+    left: calc(36px + (100% - 320px)/2);
     bottom: 75px;
 }
 
