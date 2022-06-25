@@ -42,7 +42,7 @@
   position: absolute;
   display: block;
   margin: 0 auto;
-  top:0;
+  top: 0;
   left: 50%;
   transform: translateX(-50%);
   width: 280px;
@@ -59,7 +59,7 @@
   position: absolute;
   display: block;
   margin: 0 auto;
-  top:0;
+  top: 0;
   left: 50%;
   transform: translateX(-50%);
   width: 280px;
@@ -76,7 +76,7 @@
   position: absolute;
   display: block;
   margin: 0 auto;
-  top:0;
+  top: 0;
   left: 50%;
   transform: translateX(-50%);
   width: 280px;
@@ -97,7 +97,6 @@
   content: '';
   position: absolute;
 
-  
   top: 55px;
   left: 50%;
   transform: translateX(-50%);
@@ -138,4 +137,3 @@
 .products-card__icon--milkshakes {
   fill: var(--product-third-background-color);
 }
-
