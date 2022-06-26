@@ -1,0 +1,28 @@
+.button {
+  border-radius: 22px;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+
+  transition: background-color 250ms var(--transition-timing) 200ms,
+    color 250ms var(--transition-timing) 300ms;
+
+  &--white {
+    color: var(--accent-color);
+    background-color: var(--white-color);
+    &:hover,
+    &:focus {
+      color: var(--white-color);
+      background-color: var(--accent-color);
+    }
+  }
+  &--red {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+      background-color: var(--white-color);
+    }
+  }
+}

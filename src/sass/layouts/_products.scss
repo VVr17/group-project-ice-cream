@@ -1,0 +1,127 @@
+.products {
+  text-align: center;
+}
+
+.products__list {
+  margin-top: 8px;
+}
+
+.products__item {
+  position: relative;
+  max-width: 280px;
+  margin: 0 auto;
+  padding-top: 140px;
+}
+
+.products-card__wrapper {
+  padding: 160px 40px 40px;
+  border-radius: 24px;
+}
+
+.products-card__wrapper--ice-cream {
+  background-color: var(--main-background-color);
+}
+
+.products-card__wrapper--ice-cream::after {
+  content: '';
+  position: absolute;
+  display: block;
+  margin: 0 auto;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 280px;
+  height: 280px;
+  background-image: url('../images/products/ice-cream.png');
+}
+
+.products-card__wrapper--ice-coffee {
+  background-color: var(--product-second-background-color);
+}
+
+.products-card__wrapper--ice-coffee::after {
+  content: '';
+  position: absolute;
+  display: block;
+  margin: 0 auto;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 280px;
+  height: 280px;
+  background-image: url('../images/products/ice-coffee.png');
+}
+
+.products-card__wrapper--milkshakes {
+  background-color: var(--product-third-background-color);
+}
+
+.products-card__wrapper--milkshakes::after {
+  content: '';
+  position: absolute;
+  display: block;
+  margin: 0 auto;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 280px;
+  height: 280px;
+  background-image: url('../images/products/milkshakes.png');
+}
+
+.products-card__name {
+  position: relative;
+  font-family: var(--secondary-font);
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1.15;
+  color: var(--white-color);
+}
+
+.products-card__name::after {
+  content: '';
+  position: absolute;
+
+  top: 55px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 26px;
+  height: 6px;
+  color: var(--white-color);
+  background-image: url('../images/products/dots.png');
+}
+
+.products-card__text {
+  margin-top: 70px;
+
+  font-family: var(--main-font);
+  font-weight: 700;
+  line-height: 1.52;
+  text-transform: none;
+  color: var(--white-color);
+}
+
+.products-card__btn {
+  margin-top: 32px;
+  padding: 15px 17px;
+
+  background-color: var(--white-color);
+  border-radius: 50%;
+  border-style: none;
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+
+  &:hover .products-card__icon,
+  &:focus .products-card__icon {
+    fill: var(--white-color);
+  }
+}
+
+.products-card__icon {
+  fill: var(--accent-color);
+}
