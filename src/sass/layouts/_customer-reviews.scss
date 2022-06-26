@@ -8,6 +8,16 @@
   font-size: 12px;
   line-height: 2.55;
   color: var(--main-black-text-color);
+
+  @include mq('tablet') {
+    font-size: 14px;
+    line-height: 2.16;
+  }
+
+  @include mq('desktop') {
+    font-size: 16px;
+    line-height: 1.86;
+  }
 }
 
 .customer-review__picture {
@@ -43,11 +53,13 @@
     padding-top: 68px;
     padding-left: 6px;
     padding-right: 6px;
-    // padding-bottom: 36px;
   }
 
   @include mq('desktop') {
     max-width: 968px;
+    padding-top: 68px;
+    padding-left: 6px;
+    padding-right: 6px;
   }
 }
 
@@ -68,9 +80,13 @@
   padding-right: 8px;
 
   @include mq('tablet') {
-    max-width: 620px;
     padding-right: 50px;
     padding-left: 42px;
+  }
+
+  @include mq('desktop') {
+    padding-right: 72px;
+    padding-left: 74px;
   }
 }
 
@@ -98,6 +114,16 @@
 
   font-size: 14px;
   line-height: 1.86;
+
+  @include mq('tablet') {
+    font-size: 16px;
+    line-height: 1.86;
+  }
+
+  @include mq('desktop') {
+    font-size: 20px;
+    line-height: 1.86;
+  }
 }
 
 .customer-review__name::before {
