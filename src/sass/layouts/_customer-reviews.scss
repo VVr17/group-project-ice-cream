@@ -39,6 +39,12 @@
 
 .customer-review__description {
   transform: translateY(-31px);
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.55;
+  text-align: center;
+  color: var(--main-black-text-color);
 }
 
 .customer-review__gradient-wrapper::before {
