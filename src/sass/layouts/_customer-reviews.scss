@@ -14,7 +14,6 @@
   display: flex;
   margin-bottom: 16px;
   padding-top: 74px;
-  padding-bottom: 17px;
   padding-left: 50px;
   padding-right: 50px;
   background-color: var(--customer-review-card-background-color);
@@ -38,7 +37,7 @@
 }
 
 .customer-review__description {
-  transform: translateY(-31px);
+  transform: translateY(-30px);
 
   font-weight: 500;
   font-size: 12px;
