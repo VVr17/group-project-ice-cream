@@ -1,0 +1,42 @@
+.socials {
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    // padding-top: 40px;
+    // padding-bottom: 40px;
+    margin: 0;
+    padding-left: 0;
+  }
+  
+  .socials__item:not(:last-child) {
+    margin-right: 28.24px;
+
+    @include mq(tablet) {
+        margin-right: 30px;
+      }
+  }
+  
+  .socials__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    width: 32px;
+    height: 32px;
+  
+    color: var(--icons-color);
+    cursor: pointer;
+  
+    border-radius: 50%;
+  }
+  
+  .socials__icon {
+    fill: currentColor;
+    transition: fill 250ms var(--transition-timing);
+  
+    &:hover,
+    &:focus {
+      fill: var(--accent-color);
+    }
+  }
+  
