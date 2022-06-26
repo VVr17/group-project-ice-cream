@@ -1,0 +1,53 @@
+.footer {
+  background-color: var(--second-background-color);
+  padding-bottom: 3px;
+}
+
+.footer__title {
+  // max-width: 232px;
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.17;
+  text-transform: uppercase;
+
+  color: var(--secondary-accent-color);
+}
+
+.footer__title--accent {
+  font-size: 34px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: var(--accent-color);
+}
+
+.socials {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.footer__text {
+  padding-bottom: 56px;
+  text-align: right;
+
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 186%;
+  color: var(--main-black-text-color);
+}
+
+.footer__phone {
+  text-decoration: none;
+  color: var(--accent-color);
+}
+
+.footer__text-copyright {
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 152%;
+
+  color: var(--secondary-text-color);
+}

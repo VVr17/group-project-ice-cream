@@ -1,5 +1,13 @@
+@import '../componets/modal/modal-slider';
+
 .customer-review {
   text-align: center;
+  padding-bottom: 16px;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.55;
+  color: var(--main-black-text-color);
 }
 
 .customer-review__picture {
@@ -8,16 +16,71 @@
 }
 
 .customer-review__wrapper {
-  margin-bottom: 4px;
-  padding-top: 43px;
-  padding-bottom: 26px;
-  padding-left: 60px;
-  padding-right: 60px;
+  display: flex;
+  margin-bottom: 16px;
+  padding-top: 74px;
+  padding-left: 50px;
+  padding-right: 50px;
   background-color: var(--customer-review-card-background-color);
+
+  @include mq('tablet') {
+    max-width: 620px;
+    padding: 20px, 6px, 36px, 6px;
+  }
+
+  @include mq('desktop') {
+    max-width: 968px;
+  }
+}
+
+.swiper-slide {
+  background: var(--white-color);
+}
+
+.customer-review__gradient-wrapper {
+  position: relative;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent,
+    #e1e1e1 1px,
+    transparent 1px,
+    transparent 31px
+  );
+  padding-left: 15px;
+  padding-right: 8px;
+
+  @include mq('tablet') {
+    max-width: 620px;
+    padding-top: 17px;
+    padding-right: 49px;
+    padding-bottom: 8px;
+    padding-left: 45px;
+  }
+}
+
+.customer-review__description {
+  transform: translateY(-30px);
+}
+
+.customer-review__gradient-wrapper::before {
+  position: absolute;
+  top: -4px;
+  left: 0;
+  content: '';
+  display: block;
+  width: 54px;
+  height: 40px;
+  background-image: url(../images/customer-reviews/inverted-commas.svg);
+  background-position: left top;
+  background-repeat: no-repeat;
+  transform: translateY(-100%);
 }
 
 .customer-review__name {
   position: relative;
+
+  font-size: 14px;
+  line-height: 1.86;
 }
 
 .customer-review__name::before {
@@ -29,4 +92,20 @@
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+.swiper-pagination {
+  margin-bottom: -16px;
+}
+
+.swiper-pagination-bullet {
+  background-color: transparent;
+  background-image: url(../images/icons/ellipse.svg);
+  background-size: contain;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: transparent;
+  background-image: url(../images/icons/home.svg);
+  background-size: contain;
 }
