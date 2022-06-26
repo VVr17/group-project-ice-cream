@@ -12,8 +12,8 @@
   background-size: cover;
   background-image: linear-gradient(
     to bottom,
-    var(--white-color) 22%,
-    var(--second-background-color) 22%,
+    var(--white-color) 20%,
+    var(--second-background-color) 20%,
     var(--second-background-color) 100%
   );
 }
@@ -105,6 +105,15 @@
   line-height: 1.5;
   color: var(--secondary-text-color);
   margin-top: 48px;
+}
+
+.contacts__link {
+  display: block;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .contacts__button-wrapper {

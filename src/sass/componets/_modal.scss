@@ -10,7 +10,7 @@
 
 	background: rgba(255, 165, 186, 0.25);
 
-	z-index: 200;
+	z-index: 9999;
 	opacity: 1;
 
 	transition: opacity 250ms var(--transition-timing),
@@ -159,7 +159,7 @@
 .swiper-slide {
 	text-align: center;
 	font-size: 18px;
-	background: var(--second-background-color);
+
 
 	/* Center slide text vertically */
 	display: flex;
@@ -175,6 +175,7 @@
 
 	// position: relative;
 }
+
 
 .swiper-slide img {
 	display: block;
@@ -200,8 +201,15 @@
 	color: #D41443;
 }
 
+.ice-cream.swiper-slide,
+.ice-coffee.swiper-slide,
+.milkshakes.swiper-slide {
+	background: var(--second-background-color);
+}
+
 .ice-cream.swiper-slide::after {
 	content: "0.50$";
+
 }
 
 .ice-coffee.swiper-slide::after {
