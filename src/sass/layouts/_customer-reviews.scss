@@ -25,7 +25,10 @@
 
   @include mq('tablet') {
     max-width: 620px;
-    padding: 20px, 6px, 36px, 6px;
+    padding-top: 68px;
+    padding-left: 6px;
+    padding-right: 6px;
+    // padding-bottom: 36px;
   }
 
   @include mq('desktop') {
@@ -51,15 +54,14 @@
 
   @include mq('tablet') {
     max-width: 620px;
-    padding-top: 17px;
-    padding-right: 49px;
-    padding-bottom: 8px;
-    padding-left: 45px;
+    padding-right: 50px;
+    padding-left: 42px;
   }
 }
 
 .customer-review__description {
   transform: translateY(-30px);
+  display: block;
 }
 
 .customer-review__gradient-wrapper::before {
