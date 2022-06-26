@@ -1,53 +1,9 @@
 
-// .gallery {
-//     background-repeat: no-repeat;
-//     background-position: center;
-//     background-size: cover;
-//     background-image: linear-gradient(to bottom, #FFF5F6 15%, #ffffff 15%, #ffffff 70%);
-//     &__container {
-//         padding: 0;
-//     }
-//     &__list {
-//         display: flex;
-//         align-items: center;
-//         justify-content: center;
-//     }
-//         &__img {
-//             margin-bottom: 2px;
-//             border-radius: 8px;
-//         }
-    
-//         &__list > li:nth-child(1) {
-//             margin-top: 20px;
-//             margin-right: 2px;
-    
-//         }
-    
-//         &__list > li:nth-child(2) {
-//             margin-right: 2px;
-//             margin-top: 15px;
-//         }
-    
-//         &__list > li:nth-child(3) {
-//             margin-right: 2px;
-    
-//         }
-    
-//         &__list > li:nth-child(4) {
-//             margin-right: 2px;
-//             margin-top: 25px;
-    
-//         }
-    
-//         &__list >li:nth-child(5) {
-//             margin-right: 2px;
-//         }   
-// }
 .gallery {
          background-repeat: no-repeat;
          background-position: center;
          background-size: cover;
-         background-image: linear-gradient(to bottom, #FFF5F6 18%, #ffffff 18%, #ffffff 64%);
+         background-image: linear-gradient(to bottom, var(--second-background-color) 18%, var(--white-color) 18%, var(--white-color) 64%);
 
         &__container {
             padding: 0;
