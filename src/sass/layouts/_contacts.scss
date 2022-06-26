@@ -108,9 +108,19 @@
 }
 
 .contacts__link {
+  display: block;
+
   &:hover,
   &:focus {
     color: var(--accent-color);
+  }
+
+  &--phone {
+    padding-top: 10px;
+  }
+
+  --email {
+    padding-bottom: 10px;
   }
 }
 
