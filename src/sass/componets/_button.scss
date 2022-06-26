@@ -64,3 +64,25 @@
 .contacts__button:last-child {
   margin-top: 10px;
 }
+
+.contacts__button-wrapper {
+  @include mq(mobile-only) {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }}
+
+  @include mq(tablet) {
+   display: flex;
+
+   &:not(:last-child) {
+    margin-right: 15px;
+  }
+  }
+
+  @include mq(desktop) {
+   
+    &:not(:last-child) {
+      margin-right: 12px;
+    }
+  }
+}
