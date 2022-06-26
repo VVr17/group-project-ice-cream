@@ -1,6 +1,7 @@
 .logo {
   display: block;
   padding-top: 8px;
+  z-index: 1;
 }
 .logo__icon {
   fill: var(--accent-color);
