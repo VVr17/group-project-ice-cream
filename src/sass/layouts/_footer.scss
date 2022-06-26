@@ -33,37 +33,35 @@
   padding-bottom: 40px;
   margin: 0;
   padding-left: 0;
-
 }
 
 .socials__item:not(:last-child) {
-    margin-right: 28.24px;
+  margin-right: 28.24px;
 }
 
 .socials__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    width: 32px;
-    height: 32px;
+  width: 32px;
+  height: 32px;
 
-    background-color: #FEA5BB;
-    color: var(--white-color);
+  color: var(--icons-color);
+  cursor: pointer;
 
-    cursor: pointer;
-    
-    fill: currentColor;
-
-    border-radius: 50%;
-    transition: background-color var(--transition-timing);
+  border-radius: 50%;
 }
 
 .socials__icon {
-    fill: currentColor;
-    transition: fill var(--transition-timing);
-}
+  fill: currentColor;
+  transition: fill 250ms var(--transition-timing);
 
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
+}
 
 .footer__text {
   padding-bottom: 56px;
