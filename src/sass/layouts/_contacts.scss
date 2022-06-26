@@ -113,5 +113,17 @@
 }
 
 .contacts__icon {
-    margin-left: 10px;
-  }
+  margin-left: 10px;
+}
+
+.contacts__icon--white {
+  stroke: var(--white-color);
+
+  transition: stroke 250ms var(--transition-timing);
+}
+
+.contacts__icon--red {
+  stroke: var(--accent-color);
+
+  transition: stroke 250ms var(--transition-timing);
+}

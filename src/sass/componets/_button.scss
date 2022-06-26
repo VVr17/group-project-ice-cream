@@ -49,6 +49,16 @@
   font-size: 16px;
   font-weight: 700;
   line-height: 1.31;
+
+  &:hover .contacts__icon--red,
+  &:focus .contacts__icon--red  {
+    stroke: var(--white-color);
+  }
+
+   &:hover .contacts__icon--white,
+  &:focus .contacts__icon--white  {
+    stroke: var(--accent-color);
+  }
 }
 
 .contacts__button:last-child {

@@ -111,6 +111,8 @@
   border-radius: 50%;
   border-style: none;
 
+  transition: background-color 250ms var(--transition-timing);
+
   &:hover,
   &:focus {
     background-color: var(--accent-color);
@@ -124,4 +126,5 @@
 
 .products-card__icon {
   fill: var(--accent-color);
+  transition: fill 250ms var(--transition-timing);
 }
