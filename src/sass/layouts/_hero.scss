@@ -102,6 +102,17 @@
     }
 }
 
+.button--hero {
+    font-size: 8px;
+    line-height: 1.3;
+    padding: 7px 15px;
+
+    @include mq('desktop') {
+        font-size: 14px;
+        padding: 11px 24px;
+    }
+}
+
 
 .bio-eco {
     @include mq('mobile-only') {
@@ -152,6 +163,34 @@
             line-height: 1.4;
             margin-bottom: 20px;
         }
+    }
+}
+
+
+.bio-eco__link {
+    display: block;
+    width: 18px;
+    height: 18px;
+    background-color: var(--white-color);
+    border-radius: 50%;
+    color: var( --accent-color);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include mq('desktop') {
+        width: 26px;
+        height: 26px;
+    }
+}
+
+.bio-eco__icon {
+    fill: currentColor;
+
+    @include mq('desktop') {
+        width: 7px;
+        height: 6px;
     }
 }
 
