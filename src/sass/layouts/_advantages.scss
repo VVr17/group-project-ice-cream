@@ -10,10 +10,12 @@
     @include mq('tablet') {
       display: flex;
     }
+
     @include mq('tablet-only') {
       max-width: 520px;
       gap: 20px;
     }
+
     @include mq('desktop') {
       max-width: 790px;
       gap: 110px;
