@@ -26,3 +26,31 @@
     }
   }
 }
+
+.about__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 176px;
+  padding: 12px 37px;
+
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.29;
+}
+
+.contacts__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 162px;
+  padding: 12px 17px;
+
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.31;
+}
+
+.contacts__button:last-child {
+  margin-top: 10px;
+}
