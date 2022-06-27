@@ -435,7 +435,7 @@ textarea {
   &:focus {
     fill: var(--accent-color);
   }
-
+}
   .form-input:hover + &,
   .form-input:focus + & {
     fill: var(--accent-color);
