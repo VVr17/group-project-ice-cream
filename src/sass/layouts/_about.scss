@@ -86,8 +86,6 @@
         padding-bottom: 80px;
         margin-right: auto;
         margin-left: auto;
-
-        font-size: 16px;
     }
 
 }
@@ -101,6 +99,7 @@
     }
     @include mq(desktop){
         margin-bottom: 32px;
+        font-size: 16px;
     }
 }
 
@@ -120,8 +119,31 @@
 
 .about__text--bottom{
     @include mq(tablet){
-        margin-bottom: 40px;
+        margin-bottom: 20px;
     }
+}
+
+#content {
+    max-height: 0;
+    overflow: hidden;
+    margin-bottom: 20px;
+
+    transition: max-height 0.7s;
+
+    @include mq(mobile-only){
+        max-width: 230px;
+    }
+
+    @include mq(tablet){
+        
+    }
+}
+
+#content.open{
+    max-height: 400px;
+    // display: block;
+
+    transition: max-height 0.7s;   
 }
 
 .button--about{
