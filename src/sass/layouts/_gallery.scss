@@ -3,8 +3,13 @@
          background-repeat: no-repeat;
          background-position: center;
          background-size: cover;
-         background-image: linear-gradient(to bottom, var(--second-background-color) 18%, var(--white-color) 18%, var(--white-color) 64%);
-
+         background-image: linear-gradient(to bottom, var(--second-background-color) 18%, var(--white-color) 18%, var(--white-color)100%);
+        @include mq (tablet) {
+            background-image: linear-gradient(to bottom, var(--second-background-color) 50%, var(--white-color) 50%, var(--white-color) 100%);
+        }
+        @include mq (desktop) {
+            background-image: linear-gradient(to bottom, var(--second-background-color) 24%, var(--white-color) 24%, var(--white-color)100%);
+        }
         &__container {
             padding: 0;
          }
@@ -47,8 +52,17 @@
             grid-column-end: 2;
             grid-row-start: 2;
             grid-row-end: 3;
-            margin-right: 2px;
             margin-top: 40px;
+
+            @include mq (mobile) {
+                margin-right: 2px;
+            }
+            @include mq (tablet) {
+                margin-right: 6px;
+            }
+            @include mq (desktop) {
+                margin-right: 8px;
+            }
         }
         
         &__list > li:nth-child(2) {
@@ -56,8 +70,21 @@
             grid-column-end: 3;
             grid-row-start: 2;
             grid-row-end: 3;
-            margin-right: 2px;
             margin-top: 30px;
+            @include mq (mobile) {
+                    margin-right: 2px;
+                }
+            
+            @include mq (tablet) {
+                    margin-right: 6px;
+                    margin-top: 15px;
+                    
+                }
+            
+            @include mq (desktop) {
+                    margin-right: 8px;
+                    margin-top: 0px;
+                }
         }
         
         &__list > li:nth-child(3) {
@@ -65,8 +92,20 @@
             grid-column-end: 3;
             grid-row-start: 3;
             grid-row-end: 4;
-            margin-right: 2px;
             margin-top: -9px;
+            @include mq (mobile) {
+                    margin-right: 2px;    
+                }
+            
+            @include mq (tablet) {
+                    margin-right: 6px;
+                    margin-top: -20px;
+                }
+            
+            @include mq (desktop) {
+                    margin-right: 8px;
+                    margin-top: -32px;
+                }
         }
         
         &__list > li:nth-child(4) {
@@ -74,7 +113,18 @@
             grid-column-end: 5;
             grid-row-start: 1;
             grid-row-end: 3;
-            margin-right: 2px;
+            
+            @include mq (mobile) {
+                    margin-right: 2px;
+                }
+            
+            @include mq (tablet) {
+                    margin-right: 6px;
+                }
+            
+            @include mq (desktop) {
+                    margin-right: 8px;
+                }
         }
         
         &__list > li:nth-child(5) {
@@ -83,7 +133,21 @@
             grid-row-start: 3;
             grid-row-end: 4;
             margin-top: 2px;
-            margin-right: 2px;
+            
+            @include mq (mobile) {
+                    margin-right: 2px;
+                }
+            
+            @include mq (tablet) {
+                    margin-right: 6px;
+                    margin-top: 5px;
+
+                }
+            
+            @include mq (desktop) {
+                    margin-right: 8px;
+                    margin-top: 6px;
+                }
         }
         
         &__list > li:nth-child(6) {
@@ -92,7 +156,20 @@
             grid-row-start: 2;
             grid-row-end: 3;
             margin-top: 35px;
-            margin-right: 2px;
+            
+            @include mq (mobile) {
+                    margin-right: 2px;
+                }
+            
+            @include mq (tablet) {
+                    margin-right: 6px;
+                    margin-top: 20px;
+                }
+            
+            @include mq (desktop) {
+                    margin-right: 8px;
+                    margin-top: 20px;
+                }
         }
         
         &__list > li:nth-child(7) {
@@ -100,7 +177,20 @@
             grid-column-end: 6;
             grid-row-end: 4;
             margin-top: -3px;
-            margin-right: 2px;
+            
+            @include mq (mobile) {
+                    margin-right: 2px;
+                }
+            
+            @include mq (tablet) {
+                    margin-right: 6px;
+                    margin-top: -12px;
+                }
+            
+            @include mq (desktop) {
+                    margin-right: 8px;
+                    margin-top: -12px;
+                }
         }
         
         &__list > li:nth-child(8) {
@@ -109,7 +199,20 @@
             grid-row-start: 2;
             grid-row-end: 3;
             margin-top: 20px;
-            margin-right: 2px;
+            
+            @include mq (mobile) {
+                    margin-right: 2px;
+                }
+            
+            @include mq (tablet) {
+                    margin-right: 6px;
+                    margin-top: 0;
+                }
+            
+            @include mq (desktop) {
+                    margin-right: 8px;
+                    margin-top: -15px;
+                }
         }
         
         &__list > li:nth-child(9) {
@@ -118,7 +221,20 @@
             grid-row-start: 3;
             grid-row-end: 4;
             margin-top: -18px;
-            margin-right: 2px;
+            
+            @include mq (mobile) {
+                    margin-right: 2px;
+                }
+            
+            @include mq (tablet) {
+                    margin-right: 6px;
+                    margin-top: -33px;
+                }
+            
+            @include mq (desktop) {
+                    margin-right: 8px;
+                    margin-top: -50px;
+                }
         }
         
         &__list > li:nth-child(10) {
