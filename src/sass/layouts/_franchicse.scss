@@ -124,19 +124,28 @@
   }
   
   .form-title {
-  
-    display: block;
-    font-family: 'DM Sans';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.76;
+    font-size: 16px;
+    line-height: 1.5;
     text-align: center;
     letter-spacing: 0.04em;
     margin-bottom: 12px;
     color: var(--accent-color);
   
+    @media screen and (min-width: 480px) {
+      font-size: 18px;
+    }
+  
+    @media screen and (min-width: 768px) {
+      font-size: 20px;
+    }
+  
+    @media screen and (min-width: 1200px) {
+      line-height: 1.15;
+    }
   }
+   
+  
+  
   
   .form-label {
     display: block;
