@@ -62,7 +62,9 @@
 }
 
 .contacts__button:last-child {
-  margin-top: 10px;
+  @include mq(mobile-only) {
+    margin-top: 10px;
+  }
 }
 
 .contacts__button-wrapper {
@@ -84,5 +86,26 @@
     &:not(:last-child) {
       margin-right: 12px;
     }
+  }
+}
+
+.model-button__franchise {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  background: var(--main-background-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
   }
 }
