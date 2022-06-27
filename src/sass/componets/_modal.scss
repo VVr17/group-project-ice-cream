@@ -320,7 +320,7 @@
   overflow-y: scroll;
 }
 
-.franchise__backdrop .is-hidden {
+.franchise__backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
 
