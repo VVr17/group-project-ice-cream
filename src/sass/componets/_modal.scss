@@ -304,7 +304,7 @@
 
 // Modal(contacts)
 
-.backdrop__franchise {
+.franchise__backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -314,7 +314,7 @@
   background-color: var(---menu-bacground);
   padding: 93px 15px;
   z-index: 50;
-  opacity: 1;
+  
 
   transition: opacity 250ms var(--transition-timing),
     visibility 250ms var(--transition-timing);
@@ -322,18 +322,19 @@
 
  
 
-.backdrop__franchise.is-hidden {
+.franchise__backdrop .is-hidden {
   opacity: 0;
   pointer-events: none;
 
-  & .model-wrapper__franchise {
+  & .franchise__model-wrapper {
     transform: translate(-50%, -50%) scale(0.9);
   }
 }
 
-.model-wrapper__franchise {
+.franchise__model-wrapper {
   padding: 40px;
-  background-color: var(--product-second-background-color);
+  background-color: var(--product-third-background-color);
+  opacity: 0.9;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -371,7 +372,7 @@
   margin-bottom: 10px;
 }
 
-textarea {
+.form-comments {
   resize: none;
 
   &-textarea {
@@ -389,6 +390,7 @@ textarea {
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 12px;
+  color: var(--accent-color);
 }
 
 .form-label {
@@ -430,12 +432,13 @@ textarea {
   position: absolute;
   bottom: 14px;
   left: 15px;
+  fill: var(--icons-color);
 
   &:hover,
   &:focus {
     fill: var(--accent-color);
   }
-
+}
   .form-input:hover + &,
   .form-input:focus + & {
     fill: var(--accent-color);
