@@ -1,7 +1,12 @@
 .logo {
-  display: block;
-  padding-top: 8px;
+  // padding-top: 8px;
   z-index: 1;
+  @media screen and (min-width: 767.99px) {
+    margin-right: 293px;
+  }
+  @media screen and (min-width: 1199.99px) {
+    margin-right: 128px;
+  }
 }
 .logo__icon {
   fill: var(--accent-color);
