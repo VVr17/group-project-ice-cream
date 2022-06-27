@@ -16,3 +16,12 @@
     transform: rotate(0deg);
   }
 }
+@keyframes slide-top {
+  from {
+    transform: translateY(-5px);
+  }
+
+  to {
+    transform: translateY(5px);
+  }
+}
