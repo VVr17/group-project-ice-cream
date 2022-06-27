@@ -314,7 +314,6 @@
   background-color: var(---menu-bacground);
   padding: 93px 15px;
   z-index: 50;
-  
 
   transition: opacity 250ms var(--transition-timing),
     visibility 250ms var(--transition-timing);
@@ -436,7 +435,7 @@
   &:focus {
     fill: var(--accent-color);
   }
-}
+
   .form-input:hover + &,
   .form-input:focus + & {
     fill: var(--accent-color);
