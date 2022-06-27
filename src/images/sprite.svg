@@ -74,10 +74,9 @@
   <symbol id="icon-menu-color" viewBox="0 0 48 32">
     <path d="M0 5.333v-5.333h48v5.333h-48zM0 18.667h48v-5.333h-48v5.333zM0 32h48v-5.333h-48v5.333z"></path>
   </symbol>
-  <symbol id="icon-close" viewBox="0 0 32 32">
-    <path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="miter" stroke-linecap="butt"
-      stroke-miterlimit="4" stroke-width="2" d="M2.52 2l26.964 28.004M2 29.484l28.004-26.964"></path>
-  </symbol>
+      <symbol id="icon-close" viewBox="0 0 32 32">
+      <path d="M32 3.223 28.777 0 16 12.777 3.223 0 0 3.223 12.777 16 0 28.777 3.223 32 16 19.223 28.777 32 32 28.777 19.223 16 32 3.223z"/>
+    </symbol>
 
   <!-- Arrow-top -->
   <symbol id="icon-arrow-top" viewBox="0 0 32 32">

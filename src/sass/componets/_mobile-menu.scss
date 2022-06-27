@@ -95,7 +95,7 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
-  transition: fill 250ms var(--transition-timing) 200ms;
+  transition: fill 250ms var(--transition-timing);
 
   &:hover,
   &:focus {
@@ -113,9 +113,14 @@
   position: fixed;
   top: 20;
   right: 20;
+  fill: var(--white-color);
   @media screen and (min-width: 767.99px) {
     top: 20;
     right: 32;
+  }
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
   }
 }
 
