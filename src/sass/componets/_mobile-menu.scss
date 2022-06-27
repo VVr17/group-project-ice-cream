@@ -1,7 +1,7 @@
 @media screen and (max-width: 1199.98px) {
   .mobile-menu {
     position: fixed;
-    z-index: 1100;
+    z-index: 200;
     top: 0;
     right: 0;
 
@@ -82,7 +82,7 @@
 .mobile-button {
   position: relative;
   top: 13px;
-  z-index: 1200;
+  z-index: 100;
 
   width: 30px;
   height: 30px;
@@ -109,23 +109,14 @@
     display: none;
   }
 }
-.mobile-button.is-open {
+.mobile-button.close {
   position: fixed;
-  right: 32px;
-  top: 20px;
-}
-.mobile-button .mobile-button__icon--close {
-  transform: translateX(-100%);
-}
-
-.mobile-button.is-open .mobile-button__icon--close {
-  transform: translateX(0);
-}
-.mobile-button.is-open .mobile-button__icon--menu {
-  transform: translateX(-100%);
-}
-.mobile-button__icon--menu {
-  transition: transform 900ms var(--transition-timing);
+  top: 20;
+  right: 20;
+  @media screen and (min-width: 767.99px) {
+    top: 20;
+    right: 32;
+  }
 }
 
 // Arrow to top
