@@ -15,6 +15,20 @@
   text-transform: uppercase;
   line-height: 1.166;
   color: var(--secondary-accent-color);
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 18px;
+
+    font-size: 26px;
+    line-height: 1.538;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 16px;
+    
+    font-size: 30px;
+    line-height: 1.13;
+  }
 }
 
 .section__title {
@@ -25,4 +39,14 @@
   text-transform: uppercase;
   line-height: 1.147;
   color: var(--accent-color);
+
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    line-height: 1.46;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 58px;
+    line-height: 1.138;
+  }
 }
