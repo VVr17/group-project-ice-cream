@@ -101,3 +101,22 @@
     }
   }
 }
+
+.advantages__number {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-family: var(--secondary-font);
+  font-size: 36px;
+  line-height: 41px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--accent-color);
+  transform: scale(1);
+}
+
+.advantages__number:hover,
+.advantages__number:focus {
+  color: #bf0f3b;
+  animation: translateX-1 1000ms var(--transition-timing) infinite normal;
+}
