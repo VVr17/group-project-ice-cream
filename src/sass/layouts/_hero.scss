@@ -42,12 +42,16 @@
         width:162px;
         top: 102px;
         left: 32px;
+
+        animation: Appereance-container-tablet 2s 1 ease-in-out;
     }
 
     @include mq('desktop') {
         width:277px;
         top: 147px;
         left: 16px;
+
+        animation: Appereance-container-desktop 2s 1 ease-in-out;
     }
 }
 
@@ -126,12 +130,18 @@
 
         display: flex;
         z-index: 10;
+
+        animation: Appereance-milk-tablet 2s 1 ease-in-out;
     }
 
     @include mq('desktop') {
         bottom: 51px;
         left: 16px;
+
+        animation: Appereance-milk-desktop 2s 1 ease-in-out;
     }
+
+    animation: Appereance-milk 2s 1 ease-in-out;
 
     &__img {
         @include mq('desktop') {
@@ -250,6 +260,8 @@
         position: absolute;
         top: 92px;
         right:32px;
+
+        animation: Appereance-amount-tablet 2s 1 ease-in-out;
         
 
         &__item {
@@ -270,6 +282,8 @@
     @include mq('desktop') {
         top: 152px;
         right:16px;
+
+        animation: Appereance-amount-desktop 2s 1 ease-in-out;
 
         &__item {
             width: 96px;
@@ -354,8 +368,8 @@
     &__image {
         @include mq('tablet') {
             position: absolute;
-            bottom: 0px;
             right:32px;
+            bottom: 0;
         }
 
         @include mq('desktop') {
@@ -364,5 +378,79 @@
             width: 304px;
             height: 241px;
         }
+
+        
+
+        animation: Appereance 2s 1 ease-in-out,
+        swing 5s ease-in-out 10s infinite forwards;
+        
+        
     }
 }
+
+@keyframes Appereance {
+    from {bottom: -100%;}
+    to {bottom: 0px;}
+}
+
+@keyframes Appereance-milk-tablet {
+    
+    from {bottom: -100%;}
+    to {bottom: 16px;}
+}
+
+@keyframes Appereance-milk-desktop {
+    from {bottom: -100%;}
+    to {bottom: 51px;}
+}
+
+@keyframes Appereance-container-tablet {
+    
+    from {left: -100%;}
+    to {left: 32px;}
+}
+
+@keyframes Appereance-container-desktop {
+    from {left: -100%;}
+    to {left: 16px;}
+}
+
+@keyframes Appereance-amount-tablet {
+    
+    from {right: -100%;}
+    to {right: 32px;}
+}
+
+@keyframes Appereance-amount-desktop {
+    from {right: -100%;}
+    to {right: 16px;}
+}
+
+
+
+
+@keyframes swing {
+    0% {
+       
+        transform: rotate(8deg);
+    }
+    4% {
+        
+        transform: rotate(-8deg);
+    }
+   
+    8% {
+        
+        transform: rotate(6deg);
+    }
+
+    12% {
+        
+        transform: rotate(-6deg);
+    }
+
+    16% {
+        
+        transform: rotate(0deg);
+    }
+  }
