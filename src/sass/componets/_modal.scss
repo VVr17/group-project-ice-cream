@@ -339,6 +339,7 @@
   transform: translate(-50%, -50%) scale(1);
   transition: transform cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 100;
+
   @include mq(mobile-only) {
     position: absolute;
     top: 50%;
@@ -356,6 +357,7 @@
     max-width: 450px;
     width: 100%;
   }
+
   @include mq(desktop) {
     max-width: 528px;
     width: 100%;
@@ -434,8 +436,8 @@ textarea {
     fill: var(--accent-color);
   }
 
-  .form-input:hover + &,
-  .form-input:focus + & {
+  .form-input:hover+&,
+  .form-input:focus+& {
     fill: var(--accent-color);
   }
 }
@@ -461,4 +463,8 @@ textarea {
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
   }
+}
+
+body.modal-open {
+  overflow: hidden;
 }
