@@ -14,6 +14,10 @@
     transition: opacity 250ms var(--transition-timing),
       visibility 250ms var(--transition-timing);
     overflow-y: scroll;
+
+    @include mq(mobile-only) {
+        padding-top: 20px;
+    }
   }
   
   .franchise__backdrop.is-hidden {
@@ -44,7 +48,23 @@
        top: 50%;
        left: 50%;
        transform: translate(-50%, -50%);}
-    //   max-width: 450px;
+    
+       @media screen and (min-width: 480px) and (orientation: portrait) {
+        width: 450px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(1);
+      }
+    
+      @media screen and (min-width: 480px) and (orientation: landscape) {
+        width: 450px;
+        position: relative;
+        padding: 40px;
+        margin: auto auto;
+        transform: scale(1);
+      }
+
     //   width: 100%;
     // }
   
@@ -81,7 +101,13 @@
         top: 0;
         transform: translate(-50%, 0) scale(1);
       }
-  
+      @media screen and (min-width: 768px) and (min-height: 655px) {
+        width: 450px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(1);
+      }
     @include mq('tablet') {
       width: 100%;
       max-width: 450px;
@@ -132,7 +158,7 @@
     color: var(--accent-color);
   
     @media screen and (min-width: 480px) {
-      font-size: 18px;
+      font-size: 14px;
     }
   
     @media screen and (min-width: 768px) {
@@ -152,7 +178,7 @@
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.94;
     letter-spacing: 0.04em;
     color: #907e82;
