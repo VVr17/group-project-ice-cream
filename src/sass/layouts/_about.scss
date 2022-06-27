@@ -146,26 +146,12 @@
     transition: max-height 0.7s;   
 }
 
-.button--about{
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.29;
-
-    @include mq(desktop){
-        font-size: 16px;
-        line-height: 1.31;
-    }
-    margin-bottom: 20px;
-    max-width: 230px;
-
-    &:hover .about__icon,
-    &:focus .about__icon {
-        stroke: var(--white-color);
-    }
-}
+// .button--about{
+//     margin-bottom: 20px;    
+// }
 
 .about__icon {
     margin-left: 15px;
     stroke: var(--accent-color);
-    transition: fill 250ms var(--transition-timing);
+    transition: stroke 250ms var(--transition-timing) 300ms;
 }

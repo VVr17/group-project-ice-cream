@@ -32,11 +32,24 @@
   justify-content: center;
   align-items: center;
   min-width: 176px;
+  max-width: 230px;
   padding: 12px 37px;
 
   font-size: 14px;
   font-weight: 700;
   line-height: 1.29;
+
+
+  @include mq(desktop){
+    font-size: 16px;
+    line-height: 1.31;
+}
+
+  &:hover .about__icon,
+  &:focus .about__icon {
+      stroke: var(--white-color);
+      
+  }
 }
 
 .contacts__button {
