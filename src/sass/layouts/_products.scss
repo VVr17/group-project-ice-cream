@@ -11,6 +11,10 @@
   max-width: 280px;
   margin: 0 auto;
   padding-top: 140px;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
 }
 
 .products-card__wrapper {
