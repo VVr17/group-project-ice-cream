@@ -1,66 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ice Cream</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./sass/index.scss" />
-    <!-- <script type="module" src="./index.js"></script> -->
-  </head>
 
-  <body>
-    <include src="./partials/header.html"></include>
-    <main>
-      <include src="./partials/hero.html"></include>
-      <include src="./partials/products.html"></include>
-      <include src="./partials/about.html"></include>
-      <include src="./partials/advantages.html"></include>
-      <include src="./partials/gallery.html"></include>
-      <include src="./partials/customer-reviews.html"></include>
-      <include src="./partials/contacts.html"></include>
-    </main>
-    <include src="./partials/footer.html"></include>
-    <include src="./partials/modal.html"></include>
-    <include src="./partials/mobile-menu.html"></include>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ice Cream</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./sass/index.scss" />
+  <!-- <script type="module" src="./index.js"></script> -->
+</head>
 
-    <script type="module" src="./index.js"></script>
-    <script src="./modal.js"></script>
-    <script src="./modal-button.js"></script>
-    <script src="./scrol.js"></script>
+<body>
+  <include src="./partials/header.html"></include>
+  <main>
+    <include src="./partials/hero.html"></include>
+    <include src="./partials/products.html"></include>
+    <include src="./partials/about.html"></include>
+    <include src="./partials/advantages.html"></include>
+    <include src="./partials/gallery.html"></include>
+    <include src="./partials/customer-reviews.html"></include>
+    <include src="./partials/contacts.html"></include>
+  </main>
+  <include src="./partials/footer.html"></include>
+  <include src="./partials/modal.html"></include>
+  <include src="./partials/mobile-menu.html"></include>
 
-    <script>
-      var swiper = new Swiper('.mySwiper', {
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-        loop: true,
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-        },
-      });
-    </script>
-    <script>
-      var swiper = new Swiper('.mySwiper1', {
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-        loop: true,
-      });
-    </script>
-    <script src="./modal-button.js"></script>
-<<<<<<< HEAD
-    <script src="./menu.js"></script>
-=======
-    <script src="./read-more.js"></script>
->>>>>>> main
-  </body>
+  <script src="./modal.js"></script>
+  <script type="module" src="./js/index.js"></script>
+  <script type="module" src="./js/menu.js"></script>
+  <script src="./modal-button.js"></script>
+  <script type="module" src="./js/read-more.js"></script>
+  <script type="module" src="./js/scrol.js"></script>
+  <script type="module" src="./js/franchise.js"></script>
+
+
+  <script>
+    var swiper = new Swiper('.mySwiper', {
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+  </script>
+</body>
+
 </html>

@@ -319,8 +319,7 @@
   transition: opacity 250ms var(--transition-timing),
     visibility 250ms var(--transition-timing);
   overflow-y: scroll;
-
- 
+}
 
 .franchise__backdrop .is-hidden {
   opacity: 0;
@@ -363,7 +362,6 @@
     width: 100%;
   }
 }
-
 
 /*---------------------Форма модального окна--------------------------*/
 .form-group {
