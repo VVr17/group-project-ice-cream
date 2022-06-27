@@ -73,7 +73,15 @@
     width: 130px;
     background-color: var(--product-third-background-color);
   }
-}
+
+  @include mq(mobile-only) {
+    margin-bottom: 20px;}
+   
+
+  @include mq(tablet) {
+margin-bottom: 32px;
+min-width: 73px;
+  }
 
 .contacts-card__title {
   margin-top: 20px;
