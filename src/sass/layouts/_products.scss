@@ -4,22 +4,49 @@
 
 .products__list {
   margin-top: 8px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 20px;
+
+    display: flex;
+    justify-content: center;
+    max-width: 704px;
+  }
 }
 
 .products__item {
   position: relative;
   max-width: 280px;
-  margin: 0 auto;
   padding-top: 140px;
 
-  &:not(:last-child) {
-    margin-bottom: 10px;
+  @media screen and (max-width: 767.98px) {
+    margin-left: auto;
+    margin-right: auto;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 224px;
+    padding-top: 138px;
+
+    &:not(:last-child) {
+      margin-right: 16px;
+    }
   }
 }
 
 .products-card__wrapper {
   padding: 160px 40px 40px;
   border-radius: 24px;
+
+  @media screen and (min-width: 768px) {
+    padding: 118px 25px 25px;
+  }
 }
 
 .products-card__wrapper--ice-cream {
@@ -37,6 +64,12 @@
   width: 280px;
   height: 280px;
   background-image: url('../images/products/ice-cream.png');
+
+  @media screen and (min-width: 768px) {
+    background-image: url('../images/products/ice-cream-tablet.png');
+    width: 224px;
+    height: 224px;
+  }
 }
 
 .products-card__wrapper--ice-coffee {
@@ -54,6 +87,12 @@
   width: 280px;
   height: 280px;
   background-image: url('../images/products/ice-coffee.png');
+
+  @media screen and (min-width: 768px) {
+    background-image: url('../images/products/ice-coffee-tablet.png');
+    width: 224px;
+    height: 224px;
+  }
 }
 
 .products-card__wrapper--milkshakes {
@@ -71,6 +110,12 @@
   width: 280px;
   height: 280px;
   background-image: url('../images/products/milkshakes.png');
+
+  @media screen and (min-width: 768px) {
+    background-image: url('../images/products/milkshakes-tablet.png');
+    width: 224px;
+    height: 224px;
+  }
 }
 
 .products-card__name {
