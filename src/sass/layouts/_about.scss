@@ -28,7 +28,7 @@
         background-image: url(../images/about/about-bg_lg@1x.png);
         background-size: contain;
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: top;
 
         @include mq(retina) {
             background-image: url(../images/about/about-bg_lg@2x.png);
@@ -65,7 +65,7 @@
 
     @include mq(mobile-only){
         margin: 0 auto;
-        max-width: 320px;
+        max-width: 360px;
 
         font-size: 12px;
         line-height: 1.62;
@@ -74,6 +74,7 @@
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
+        background-position-y: 70px;
 
         @include mq(retina) {
             background-image: url(../images/about/about-bg_sm@2x.png);
