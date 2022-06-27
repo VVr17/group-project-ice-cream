@@ -197,15 +197,16 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 22px;
 
-  background: #ffffff;
+  background-color: var(--accent-color);
   transition: color 250ms var(--transition-timing),
     border-color 250ms var(--transition-timing);
   cursor: pointer;
-  color: #000000;
+  color: var(--white-color);
 
   &:hover,
   &:focus {
-    color: rgb(214, 57, 167);
+    color: var(--accent-color);
+    background-color: var(--white-color);
     border-color: rgb(214, 57, 167);
   }
 }
