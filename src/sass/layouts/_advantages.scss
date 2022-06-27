@@ -2,18 +2,64 @@
   background-color: var(--second-background-color);
   &__list {
     max-width: 320px;
-    margin: 0 auto;
+    @include mq('mobile-only') {
+      margin: 0 auto;
+    }
+    @include mq('tablet') {
+      display: flex;
+    }
+    @include mq('tablet-only') {
+      max-width: 520px;
+      gap: 20px;
+    }
+    @include mq('desktop') {
+      max-width: 790px;
+      gap: 110px;
+    }
   }
-  &__item {
-    position: relative;
-    padding-top: 66px;
-    max-width: 230px;
-    color: var(--accent-color);
+
+  &__number {
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-family: var(--secondary-font);
+    font-size: 36px;
+    line-height: 41px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
   }
-  &__item:not(:last-child) {
+
+  &__text {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.7;
+    color: var(--main-black-text-color);
+  }
+}
+
+.advantages__item {
+  position: relative;
+  padding-top: 66px;
+  max-width: 230px;
+  color: var(--accent-color);
+
+  @include mq('tablet-only') {
+    max-width: 175px;
+  }
+
+  @include mq('desktop') {
+    max-width: 290px;
+  }
+
+  &:not(:last-child) {
     margin-bottom: 32px;
   }
-  &__item::before {
+
+  @include mq('tablet') {
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+  &::before {
     content: ' ';
     position: absolute;
     top: 0;
@@ -24,46 +70,34 @@
     background-size: contain;
     background-repeat: no-repeat;
   }
-  &__item:nth-child(1):before {
+
+  &:nth-child(1):before {
     background-image: url('../images/icons/milk.png');
     background-image: url('../images/icons/milk.webp');
 
-    @mixin mq($retina) {
+    @include mq('retina') {
       background-image: url('../images/icons/milk@2x.png');
       background-image: url('../images/icons/milk@2x.webp');
     }
   }
-  &__item:nth-child(2):before {
+
+  &:nth-child(2):before {
     background-image: url('../images/icons/apples.png');
     background-image: url('../images/icons/apples.webp');
 
-    @mixin mq($retina) {
+    @include mq('retina') {
       background-image: url('../images/icons/apples@2x.png');
       background-image: url('../images/icons/apples@2x.webp');
     }
   }
-  &__item:nth-child(3):before {
+
+  &:nth-child(3):before {
     background-image: url('../images/icons/heart.png');
     background-image: url('../images/icons/heart.webp');
 
-    @mixin mq($retina) {
+    @include mq('retina') {
       background-image: url('../images/icons/heart@2x.png');
       background-image: url('../images/icons/heart@2x.webp');
     }
-  }
-  &__number {
-    margin-bottom: 20px;
-    font-weight: 400;
-    font-family: var(--secondary-font);
-    font-size: 36px;
-    line-height: 41px;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-  }
-  &__text {
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 1.7;
-    color: var(--main-black-text-color);
   }
 }
