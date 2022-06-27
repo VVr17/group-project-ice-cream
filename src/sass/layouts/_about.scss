@@ -28,7 +28,7 @@
         background-image: url(../images/about/about-bg_lg@1x.png);
         background-size: contain;
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: top;
 
         @include mq(retina) {
             background-image: url(../images/about/about-bg_lg@2x.png);
@@ -65,7 +65,7 @@
 
     @include mq(mobile-only){
         margin: 0 auto;
-        max-width: 320px;
+        max-width: 360px;
 
         font-size: 12px;
         line-height: 1.62;
@@ -74,6 +74,7 @@
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
+        background-position-y: 70px;
 
         @include mq(retina) {
             background-image: url(../images/about/about-bg_sm@2x.png);
@@ -86,8 +87,6 @@
         padding-bottom: 80px;
         margin-right: auto;
         margin-left: auto;
-
-        font-size: 16px;
     }
 
 }
@@ -101,6 +100,7 @@
     }
     @include mq(desktop){
         margin-bottom: 32px;
+        font-size: 16px;
     }
 }
 
@@ -120,30 +120,39 @@
 
 .about__text--bottom{
     @include mq(tablet){
-        margin-bottom: 40px;
+        margin-bottom: 20px;
     }
 }
 
-.button--about{
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.29;
-
-    @include mq(desktop){
-        font-size: 16px;
-        line-height: 1.31;
-    }
+#content {
+    max-height: 0;
+    overflow: hidden;
     margin-bottom: 20px;
-    max-width: 230px;
 
-    &:hover .about__icon,
-    &:focus .about__icon {
-        stroke: var(--white-color);
+    transition: max-height 0.7s;
+
+    @include mq(mobile-only){
+        max-width: 230px;
+    }
+
+    @include mq(tablet){
+        
     }
 }
+
+#content.open{
+    max-height: 400px;
+    // display: block;
+
+    transition: max-height 0.7s;   
+}
+
+// .button--about{
+//     margin-bottom: 20px;    
+// }
 
 .about__icon {
     margin-left: 15px;
     stroke: var(--accent-color);
-    transition: fill 250ms var(--transition-timing);
+    transition: stroke 250ms var(--transition-timing) 300ms;
 }

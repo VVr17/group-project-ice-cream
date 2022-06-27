@@ -6,7 +6,7 @@
   @media screen and (min-width: 767.98px) {
     padding-top: 32px;
     position: absolute;
-    width: 100%;
+    width: 100vw;
   }
   @media screen and (min-width: 1199.98px) {
     padding-top: 37px;
@@ -14,8 +14,8 @@
   }
 }
 .header__container {
-  display: flex;
   background-color: var(--main-background-color);
+  display: flex;
   @media screen and (min-width: 767.98px) {
     align-items: center;
   }
