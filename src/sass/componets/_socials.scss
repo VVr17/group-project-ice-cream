@@ -4,7 +4,7 @@
     align-items: flex-end;
     margin-top: 40px;
     margin-bottom: 40px;
-   
+    
 
     @include mq('tablet-only') {
     margin-top: 0;
@@ -28,7 +28,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
- 
+
     width: 32px;
     height: 32px;
  
@@ -36,6 +36,8 @@
     cursor: pointer;
   
     border-radius: 50%;
+
+    transition: color 250ms var(--transition-timing);
 
     &:hover,
     &:focus {
@@ -46,6 +48,6 @@
   
   .socials__icon {
     fill: currentColor;
-    transition: fill 250ms var(--transition-timing);
+    
   }
   
