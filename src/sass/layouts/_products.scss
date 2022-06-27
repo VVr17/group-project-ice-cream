@@ -14,6 +14,10 @@
     justify-content: center;
     max-width: 704px;
   }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1174px;
+  }
 }
 
 .products__item {
@@ -38,6 +42,15 @@
       margin-right: 16px;
     }
   }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1174px;
+    padding-top: 253px;
+
+    &:not(:last-child) {
+      margin-right: 26px;
+    }
+  }
 }
 
 .products-card__wrapper {
@@ -46,6 +59,10 @@
 
   @media screen and (min-width: 768px) {
     padding: 118px 25px 25px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 165px 63px 60px;
   }
 }
 
@@ -70,6 +87,12 @@
     width: 224px;
     height: 224px;
   }
+
+  @media screen and (min-width: 1200px) {
+    background-image: url('../images/products/ice-cream-desktop.png');
+    width: 368px;
+    height: 394px;
+  }
 }
 
 .products-card__wrapper--ice-coffee {
@@ -92,6 +115,12 @@
     background-image: url('../images/products/ice-coffee-tablet.png');
     width: 224px;
     height: 224px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: url('../images/products/ice-coffee-desktop.png');
+    width: 368px;
+    height: 394px;
   }
 }
 
@@ -116,6 +145,12 @@
     width: 224px;
     height: 224px;
   }
+
+  @media screen and (min-width: 1200px) {
+    background-image: url('../images/products/milkshakes-desktop.png');
+    width: 368px;
+    height: 394px;
+  }
 }
 
 .products-card__name {
@@ -126,6 +161,11 @@
   text-transform: uppercase;
   line-height: 1.15;
   color: var(--white-color);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 30px;
+    line-height: 1.13;
+  }
 }
 
 .products-card__name::after {
@@ -140,6 +180,10 @@
   height: 6px;
   color: var(--white-color);
   background-image: url('../images/products/dots.png');
+
+  @media screen and (min-width: 1200px) {
+    top: 66px;
+  }
 }
 
 .products-card__text {
@@ -150,11 +194,20 @@
   line-height: 1.52;
   text-transform: none;
   color: var(--white-color);
+
+  @media screen and (min-width: 768px) {
+    line-height: 1.785;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 1.75;
+  }
 }
 
 .products-card__btn {
   cursor: pointer;
-  
+
   margin-top: 32px;
   padding: 15px 17px;
 
