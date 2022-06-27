@@ -2,7 +2,7 @@
   background-color: var(--second-background-color);
   padding-bottom: 3px;
 
-  @include mq(tablet) {
+  @include mq('tablet') {
     padding-bottom: 4px;
 }
 }
@@ -11,7 +11,7 @@
   position: relative;
   margin-bottom: 56px;
 
-  @include mq(tablet) {
+  @include mq('tablet') {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -42,17 +42,17 @@
 
   color: var(--secondary-accent-color);
 
-  @include mq(tablet) {
+  @include mq('tablet') {
     font-size: 26px;
     line-height: 1.15;
     letter-spacing: 0.04em;
   }
 
-  @include mq(tablet-only) {
+  @include mq('tablet-only') {
     max-width: 340px;
   }
 
-  @include mq(desktop) {
+  @include mq('desktop') {
     font-size: 30px;
     line-height: 1.13;
   }
@@ -68,17 +68,17 @@
 
   color: var(--accent-color);
 
-  @include mq(tablet) {
+  @include mq('tablet') {
     font-size: 48px;
     line-height: 1.15;
     letter-spacing: 0.06em;
   }
 
-  @include mq(tablet-only) {
+  @include mq('tablet-only') {
     margin-top: 12px;
   }
 
-  @include mq(desktop) {
+  @include mq('desktop') {
     font-size: 58px;
     line-height: 1.14;
   }
@@ -87,7 +87,7 @@
 
 .footer__socials-container {
 
-  @include mq(tablet) {
+  @include mq('tablet') {
     justify-content: flex-end;
 }
 }
@@ -100,18 +100,21 @@
   line-height: 186%;
   color: var(--main-black-text-color);
 
-  @include mq(tablet) {
+  @include mq('tablet') {
     font-size: 14px;
   }
 
-  @include mq(desktop) {
+  @include mq('desktop') {
     font-size: 16px;
   }
 }
 
 .footer__phone {
+  padding-top: 20px;
+  padding-bottom: 20px;
   text-decoration: none;
   color: var(--accent-color);
+
 }
 
 .footer__text-copyright {
@@ -127,11 +130,11 @@
 
   color: var(--secondary-text-color);
 
-  @include mq(tablet) {
+  @include mq('tablet') {
   padding: 0;
   }
 
-  @include mq(tablet) {
+  @include mq('tablet') {
     line-height: 186%;
     letter-spacing: 0.02em;
   }

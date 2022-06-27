@@ -6,12 +6,12 @@
     padding-bottom: 40px;
     margin: 0;
 
-    @include mq(tablet-only) {
+    @include mq('tablet-only') {
     padding-top: 0;
     padding-bottom: 44px;
     }
 
-    @include mq(desktop) {
+    @include mq('desktop') {
     padding-top: 0;
     }
   }
@@ -19,7 +19,7 @@
   .socials__item:not(:last-child) {
     margin-right: 28.24px;
 
-    @include mq(tablet) {
+    @include mq('tablet') {
         margin-right: 30px;
       }
   }
@@ -28,7 +28,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  
+ 
     width: 32px;
     height: 32px;
   
@@ -37,10 +37,6 @@
   
     border-radius: 50%;
 
-    @include mq(tablet) {
-    width: 34px;
-    height: 34px;
-    }
   }
   
   .socials__icon {
