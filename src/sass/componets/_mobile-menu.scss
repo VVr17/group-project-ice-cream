@@ -45,6 +45,11 @@
 
   animation: swing 3s ease-in-out infinite forwards;
 }
+.mobile-menu__naviation {
+  @media screen and (min-width: 1199.99px) {
+    display: none;
+  }
+}
 .mobile-menu__item {
   border-top: 1px solid var(--border-color);
   border-bottom: 1px solid var(--border-color);
@@ -118,4 +123,26 @@
 }
 .mobile-button.is-open .mobile-button__icon--menu {
   display: none;
+}
+
+// Arrow to top
+.arrow-top {
+  position: fixed;
+  bottom: 20px;
+  right: 15px;
+  z-index: 50;
+
+  width: 40;
+  height: 40;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  animation: slide-top 1s linear 2s infinite alternate both;
+}
+.arrow {
+  fill: var(--accent-color);
 }
