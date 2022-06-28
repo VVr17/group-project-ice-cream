@@ -113,8 +113,8 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
-  transition: fill 250ms var(--transition-timing);
-
+  transition: fill 400ms var(--transition-timing);
+  transition: transform 300ms var(--transition-timing), visibility 150ms var(--transition-timing);
   &:hover,
   &:focus{
     fill: var(--white-color);
@@ -128,12 +128,10 @@
     display: none;
   }
 }
-.js-hide-menu-bg.is-open {
-  display: none;
 
-}
 .js-hide-btn.is-open {
-  display: none;
+  transform: translateY(-300%);
+  visibility: hidden;
 }
 .mobile-button.close {
   position: fixed;
