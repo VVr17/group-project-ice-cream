@@ -27,7 +27,7 @@
 
     width: 100%;
     @media screen and (min-width: 767.99px) {
-      width: 38%;
+      width: 254px;
     }
     height: 100%;
 
@@ -115,9 +115,11 @@
   cursor: pointer;
   transition: fill 250ms var(--transition-timing);
 
-  &:hover,
-  &:focus {
+  &:hover{
     fill: var(--white-color);
+  }
+  &:focus {
+    fill: #ffb8ca4d;
   }
   @include mq(tablet) {
     position: static;
@@ -126,6 +128,10 @@
   @include mq(desktop) {
     display: none;
   }
+}
+.js-hide-menu-bg.is-open {
+  display: none;
+
 }
 .mobile-button.close {
   position: fixed;
