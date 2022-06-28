@@ -16,9 +16,8 @@
   </symbol>
   <!-- Pointers -->
   <symbol id="right-pointer" viewBox="0 0 19 32">
-<path fill="none" stroke="#d41443" style="stroke: var(--color1, #d41443)" stroke-linejoin="round" stroke-linecap="round" 
-stroke-miterlimit="4" stroke-width="6.4" d="M3.2 3.2l12.8 12.8-12.8 12.8"></path>
-</symbol>
+    <path fill="none" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4"
+      d="M3.2 3.2l12.8 12.8-12.8 12.8"></path>
   </symbol>
   <symbol id="right-arrow" viewBox="0 0 38 32">
     <path d="M22.191-0.044h-8.791l16 16.044h8.791l-16-16.044z">
