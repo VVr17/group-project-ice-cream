@@ -1,3 +1,21 @@
+.js-open-menu-bg {
+  width: 100%;
+  height: 100%;
+  z-index: 50;
+  opacity: 0;
+  transition: opacity 250ms var(--transition-timing), visibility 250ms var(--transition-timing);
+  background: #ef718f40;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: scroll;
+  visibility: hidden;
+}
+
+.js-open-menu-bg.is-open {
+  opacity: 1;
+  visibility: visible;
+}
 @media screen and (max-width: 1199.98px) {
   .mobile-menu {
     position: fixed;
