@@ -4,6 +4,7 @@
   const closeMenuBtn = document.querySelector('.js-close-menu');
   const openMenuBg = document.querySelector('.js-open-menu-bg');
   const hideMenuIc = document.querySelector('.js-hide-menu-bg');
+  const hideBtn = document.querySelector('.js-hide-btn');
 
   const toggleMenu = () => {
     const isMenuOpen =
@@ -12,6 +13,7 @@
       mobileMenu.classList.toggle('is-open');
       openMenuBg.classList.toggle('is-open');
       hideMenuIc.classList.toggle('is-open');
+      hideBtn.classList.toggle('is-open');
       document.body.classList.toggle("modal-open")
 
     const scrollLockMethod = !isMenuOpen
