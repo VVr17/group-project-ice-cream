@@ -27,7 +27,7 @@
 
     width: 100%;
     @media screen and (min-width: 767.99px) {
-      width: 38%;
+      width: 254px;
     }
     height: 100%;
 
@@ -131,6 +131,9 @@
 .js-hide-menu-bg.is-open {
   display: none;
 
+}
+.js-hide-btn.is-open {
+  display: none;
 }
 .mobile-button.close {
   position: fixed;
