@@ -26,6 +26,7 @@
 
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0.85);
+
 }
 
 .modal {
@@ -36,6 +37,7 @@
   padding: 25px;
   width: 100%;
   max-width: 450px;
+  transition: transform 250ms var(--transition-timing);
 
   @media screen and (max-width: 479.98px) {
     margin-left: auto;
@@ -178,9 +180,9 @@
 //  КАРТИНКА
 .swiper-slide::after {
   content: ' ';
-  font-family: 'Titan One';
+  font-family: var(--secondary-font);
   font-style: normal;
-  font-weight: 400;
+  // font-weight: 400;
   font-size: 24px;
   line-height: 1.5;
   /* identical to box height */
@@ -189,7 +191,7 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
 
-  color: #d41443;
+  color: var(--accent-color);
 }
 
 .ice-cream.swiper-slide,
@@ -234,9 +236,9 @@
 
   cursor: pointer;
 
-  font-family: 'DM Sans';
+  font-family: var(--main-font);
   font-style: normal;
-  font-weight: 500;
+  font-weight: var(--main-font-weight);
   font-size: 14px;
   line-height: 1.94;
   /* or 27px */
@@ -248,7 +250,7 @@
 
 .modal-field:focus-within .modal-input,
 .modal-field:hover .modal-input {
-  border-color: rgb(214, 57, 167);
+  border-color: var(--secondary-accent-color);
 }
 
 .modal-field:not(:first-child) {
@@ -301,4 +303,3 @@
     border-color: rgb(214, 57, 167);
   }
 }
-
