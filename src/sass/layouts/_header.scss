@@ -1,8 +1,7 @@
 .header {
+  padding-top: 8px;
   background-color: var(--main-background-color);
-  @include mq(mobile) {
-    padding-top: 8px;
-  }
+
   @include mq(tablet) {
     padding-top: 32px;
     position: fixed;
