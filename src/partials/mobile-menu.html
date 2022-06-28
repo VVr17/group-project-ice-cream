@@ -1,4 +1,19 @@
-<div class="mobile-menu" data-menu>
+<div class="js-open-menu-bg"></div>
+<div class="mobile-menu js-menu-container" data-menu>
+  <button
+    type="button"
+    class="mobile-button close js-close-menu"
+    data-menu-button
+    aria-expanded="false"
+  >
+    <svg width="14" height="14" aria-label="Menu switcher">
+      <use
+        class="mobile-button__icon--close"
+        href="./images/sprite.svg#icon-close"
+      ></use>
+    </svg>
+  </button>
+
   <button
     class="button button--white mobile-menu__button"
     type="button"
