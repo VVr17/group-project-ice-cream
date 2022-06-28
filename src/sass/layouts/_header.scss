@@ -6,7 +6,7 @@
     padding-top: 32px;
     position: fixed;
     z-index: 25;
-    background-color: rgba(255,184,202,0.2);
+    background-color: rgba(255, 184, 202, 0.2);
     width: 100%;
   }
   @include mq(desktop) {
@@ -75,7 +75,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
- 
   }
 }
 .button__icon {
@@ -86,9 +85,11 @@
     stroke: var(--white-color);
   }
 }
-.header__button:hover .button__icon, .header__button:focus .button__icon {
+.header__button:hover .button__icon,
+.header__button:focus .button__icon {
   stroke: var(--white-color);
 }
-.mobile-menu__button:hover .button__icon, .mobile-menu__button:focus .button__icon {
+.mobile-menu__button:hover .button__icon,
+.mobile-menu__button:focus .button__icon {
   stroke: var(--white-color);
 }

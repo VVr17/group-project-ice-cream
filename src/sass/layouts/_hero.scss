@@ -109,7 +109,10 @@
 .button--hero {
     font-size: 8px;
     line-height: 1.3;
-    padding: 7px 15px;
+    padding: 7px 14px;
+
+    text-decoration: none;
+    display: block;
 
     @include mq('desktop') {
         font-size: 14px;
@@ -141,7 +144,7 @@
         animation: Appereance-milk-desktop 2s 1 ease-in-out;
     }
 
-    animation: Appereance-milk 2s 1 ease-in-out;
+   
 
     &__img {
         @include mq('desktop') {
@@ -192,6 +195,15 @@
     @include mq('desktop') {
         width: 26px;
         height: 26px;
+    }
+
+    transition: background-color 250ms var(--transition-timing),
+    color 250ms var(--transition-timing);
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+        color: var(--white-color);
     }
 }
 
@@ -382,7 +394,7 @@
         
 
         animation: Appereance 2s 1 ease-in-out,
-        swing 5s ease-in-out 10s infinite forwards;
+        swing 5s ease-in-out 5s infinite forwards;
         
         
     }
