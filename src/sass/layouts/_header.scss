@@ -6,7 +6,7 @@
   @media screen and (min-width: 767.98px) {
     padding-top: 32px;
     position: absolute;
-    width: 100vw;
+    width: 100%;
   }
   @media screen and (min-width: 1199.98px) {
     padding-top: 37px;
@@ -77,4 +77,8 @@
 }
 .button__icon {
   margin-left: 10px;
+  &:hover,
+  &:focus {
+    color: var(--white-color);
+  }
 }
