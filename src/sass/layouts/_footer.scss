@@ -5,6 +5,10 @@
   @include mq('tablet') {
     padding-bottom: 4px;
 }
+
+@include mq('desktop') {
+  padding-top: 60px;
+}
 }
 
 .footer__group {
@@ -130,9 +134,17 @@
   text-decoration: none;
   color: var(--accent-color);
 
+  transition: color 250ms var(--transition-timing);
+
   @include mq('desktop') {
     padding-bottom: 0;
   }
+
+  &:hover,
+  &:focus {
+  color: var(--icons-color);
+  }
+
 
 }
 
