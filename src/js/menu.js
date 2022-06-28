@@ -3,6 +3,7 @@
   const openMenuBtn = document.querySelector('.js-open-menu');
   const closeMenuBtn = document.querySelector('.js-close-menu');
   const openMenuBg = document.querySelector('.js-open-menu-bg');
+  const hideMenuIc = document.querySelector('.js-hide-menu-bg');
 
   const toggleMenu = () => {
     const isMenuOpen =
@@ -10,6 +11,7 @@
     openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
       mobileMenu.classList.toggle('is-open');
       openMenuBg.classList.toggle('is-open');
+      hideMenuIc.classList.toggle('is-open');
       document.body.classList.toggle("modal-open")
 
     const scrollLockMethod = !isMenuOpen
