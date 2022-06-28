@@ -1,29 +1,32 @@
 .header {
   background-color: var(--main-background-color);
-  @media screen and (max-width: 767.96px) {
+  @include mq(mobile) {
     padding-top: 8px;
   }
-  @media screen and (min-width: 767.98px) {
+  @include mq(tablet) {
     padding-top: 32px;
-    position: absolute;
+    position: fixed;
+    z-index: 25;
+    background-color: rgba(255,184,202,0.3);
     width: 100%;
   }
-  @media screen and (min-width: 1199.98px) {
+  @include mq(desktop) {
+    position: absolute;
+    width: 100%;
     padding-top: 37px;
     padding-bottom: 0;
   }
 }
 .header__container {
-  background-color: var(--main-background-color);
   display: flex;
-  @media screen and (min-width: 767.98px) {
+  @include mq(tablet) {
     align-items: center;
   }
 }
 
 .header__navigation {
   display: none;
-  @media screen and (min-width: 1199.98px) {
+  @include mq(desktop) {
     display: block;
   }
 }
@@ -60,7 +63,7 @@
 
 .header__button {
   display: none;
-  @media screen and (min-width: 767.98px) {
+  @include mq(tablet) {
     display: block;
     z-index: 1;
     margin-left: auto;
