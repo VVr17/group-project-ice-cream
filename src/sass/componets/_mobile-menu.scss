@@ -27,7 +27,7 @@
 
     width: 100%;
     @media screen and (min-width: 767.99px) {
-      width: 254px;
+      width: 38%;
     }
     height: 100%;
 
@@ -83,7 +83,7 @@
   padding-left: 20px;
 
   font-style: normal;
-  font-weight: 700;
+   font-weight: 700;
   line-height: 1.28;
 
   color: var(--white-color);
@@ -115,12 +115,11 @@
   cursor: pointer;
   transition: fill 250ms var(--transition-timing);
 
-  &:hover{
+  &:hover,
+  &:focus{
     fill: var(--white-color);
   }
-  &:focus {
-    fill: #ffb8ca4d;
-  }
+
   @include mq(tablet) {
     position: static;
     margin: 0;
