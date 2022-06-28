@@ -12,6 +12,10 @@
         }
         &__container {
             padding: 0;
+            @include mq(desktop) {
+                padding-left: 93px;
+                padding-right: 93px;
+            }
          }
         &__img {
             height: auto;
