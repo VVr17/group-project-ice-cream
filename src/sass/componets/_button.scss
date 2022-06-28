@@ -94,14 +94,30 @@
   }
   }
 
+ 
+}
+.button--red {
+  @include mq(tablet) {
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+  }
+
   @include mq(desktop) {
    
     &:not(:last-child) {
       margin-right: 12px;
     }
   }
-}
+  }
 
+// @include mq(tablet) {
+//   display: flex;
+
+//   &:not(:last-child) {
+//    margin-right: 15px;
+//  }
+// }
 .franchise__button {
   // display: flex;
   // align-items: center;
