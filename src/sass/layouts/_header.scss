@@ -1,13 +1,12 @@
 .header {
+  padding-top: 8px;
   background-color: var(--main-background-color);
-  @include mq(mobile) {
-    padding-top: 8px;
-  }
+
   @include mq(tablet) {
     padding-top: 32px;
     position: fixed;
     z-index: 25;
-    background-color: rgba(255,184,202,0.3);
+    background-color: rgba(255,184,202,0.2);
     width: 100%;
   }
   @include mq(desktop) {
