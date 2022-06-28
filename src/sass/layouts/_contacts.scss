@@ -21,10 +21,25 @@
   background-color: var(--white-color);
   box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1);
 border-radius: 24px;
+padding: 0 32px 0 32px;
+// @include mq(mobile-only) {
+//   m
+// }
+@include mq(mobile-only) {
+  max-width: 280px;
+  min-height: 412px;
+  margin: 0 auto;
+  font-size: 12px;
+  line-height: 1.5;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
 
   @include mq(tablet) {
     max-width: 224px;
-    max-height: 528px;
+    min-height: 528px;
     font-size: 14px;
     line-height: 1.66;
 
@@ -34,7 +49,7 @@ border-radius: 24px;
   }
   @include mq(desktop) {
     max-width: 368px;
-    max-height: 538px;
+    min-height: 538px;
     font-size: 16px;
     line-height: 1.83;
 
@@ -50,31 +65,55 @@ border-radius: 24px;
 
 
  .contacts-card__top {
-   padding: 40px 32px 24px 32px;
+    // padding: 40px  24px;
+padding-top: 40px;
+padding-bottom: 24px;
+  
    border-bottom: 1px solid var(--contacts-card-border-color);
 
    @include mq(tablet) {
-     padding: 40px 32px 32px 32px;
+padding-top: 40px;
+padding-bottom: 32px;
+
+    //  padding: 40px 32px 32px 32px;
    } }
  .contacts-card__middle {
-   padding: 24px 32px;
+  //  padding: 24px 32px;
+padding-top: 24px;
+padding-bottom: 24px;
+  
    border-bottom: 1px solid var(--contacts-card-border-color);
 
    @include mq(tablet) {
-     padding: 32px 33px;
+      // padding: 32px 33px;
+padding-top: 32px;
+padding-bottom: 32px;
+    
    }
    @include mq(desktop) {
-     padding: 32px 40px;
+      // padding: 32px 40px;
+
+    padding-top: 32px;
+    padding-bottom: 32px;
+   
    }
 }
    .contacts-card__bottom {
-     padding: 32px 40px 40px 40px;
+    //  padding: 32px 40px 40px 40px;
+padding-top: 32px;
+padding-bottom: 40px;
+
 
      @include mq(tablet) {
-       padding: 32px 32px 40px 32px;
+      //  padding: 32px 32px 40px 32px;
+padding-top: 32px;
+padding-bottom: 40px;
+
      }
      @include mq(desktop) {
-       padding: 32px 32px 40px 32px;
+      //  padding: 32px 32px 40px 32px;
+      padding-top: 32px;
+      padding-bottom: 32px;
      }
    }
  
@@ -118,11 +157,11 @@ border-radius: 24px;
    }
  }
 
-// .contacts-card__description {
+ .contacts-card__description {
  
-//   color: var(--secondary-text-color);
-//   margin-top: 8px;
-// }
+   color: var(--secondary-text-color);
+   margin-top: 8px;
+ }
 
 // .contacts-card__description::after {
 //   position: absolute;
