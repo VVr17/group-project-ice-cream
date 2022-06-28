@@ -1,11 +1,3 @@
-.section__contacts {
-  padding-bottom: 40px;
-
-  @include mq('desktop') {
-    padding-bottom: 60px;
-  }
-}
-
 .contacts {
   background-repeat: no-repeat;
   background-position: center;
@@ -16,22 +8,38 @@
     var(--second-background-color) 20%,
     var(--second-background-color) 100%
   );
+
+  @include mq('tablet') {
+    background-image: linear-gradient(
+      to bottom,
+      var(--white-color) 42%,
+      var(--second-background-color) 42%,
+      var(--second-background-color) 100%
+    );
+  }
+
+  @include mq('desktop') {
+    background-image: linear-gradient(
+      to bottom,
+      var(--white-color) 21%,
+      var(--second-background-color) 21%,
+      var(--second-background-color) 100%
+    );
+  }
 }
 
 .contacts-card {
   background-color: var(--white-color);
-  padding: 40px 32px 40px 32px;
-  border-bottom: 1px solid var(----contacts-card-border-color);
-  box-shadow: var(--contacts-card-box-shadow);
+  box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
-  font-weight: 500;
+  padding: 40px 32px 16px 32px;
 
   @include mq(mobile-only) {
     max-width: 280px;
-    max-height: 412px;
     margin: 0 auto;
     font-size: 12px;
     line-height: 1.5;
+    font-weight: 500;
 
     &:not(:last-child) {
       margin-bottom: 20px;
@@ -39,8 +47,7 @@
   }
 
   @include mq(tablet) {
-    max-width: 224px;
-    max-height: 528px;
+    max-width: calc((100% - 32px * 2) / 3);
     font-size: 14px;
     line-height: 1.66;
 
@@ -50,16 +57,53 @@
   }
 
   @include mq(desktop) {
-    max-width: 368px;
-    max-height: 538px;
+    max-width: calc((100% - 32px * 2) / 3);
     font-size: 16px;
     line-height: 1.83;
+    padding-left: 40px;
+    padding-right: 40px;
 
     &:not(:last-child) {
       margin-right: 32px;
     }
   }
 }
+.contacts-card__top {
+  padding-bottom: 24px;
+
+  border-bottom: 1px solid var(--contacts-card-border-color);
+
+  @include mq(tablet) {
+    padding-bottom: 32px;
+  }
+}
+.contacts-card__middle {
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  border-bottom: 1px solid var(--contacts-card-border-color);
+
+  @include mq(tablet) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  @include mq(desktop) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
+// .contacts-card__bottom {
+//   padding-top: 32px;
+
+//   @include mq(tablet) {
+//     padding-top: 32px;
+//   }
+
+//   @include mq(desktop) {
+//     padding-top: 32px;
+//   }
+// }
 
 .contacts-card__uppertitle {
   text-align: center;
@@ -84,11 +128,11 @@
   }
 }
 .contacts-card__title {
-  margin-top: 20px;
+  display: block;
   line-height: 1.86;
+  margin-bottom: 8px;
 
   @include mq(mobile-only) {
-    margin: 0 auto;
     font-size: 12px;
   }
 
@@ -102,33 +146,11 @@
 }
 
 .contacts-card__description {
-  position: relative;
   color: var(--secondary-text-color);
-  margin-top: 8px;
-}
-
-.contacts-card__description::after {
-  position: absolute;
-  content: '';
-  left: 0;
-  bottom: -24px;
-
-  display: block;
-  width: 100%;
-  height: 1px;
-  background-color: var(--contacts-card-border-color);
-
-  @include mq(tablet) {
-    bottom: -32px;
-  }
-}
-
-.working-hours {
-  margin-top: 48px;
 }
 
 .working-hours__item {
-  position: relative;
+  //   position: relative;
   &:not(:last-child) {
     margin-bottom: 8px;
   }
@@ -138,23 +160,9 @@
   color: var(--secondary-accent-color);
 }
 
-.working-hours__item:last-child:after {
-  position: absolute;
-  content: '';
-
-  bottom: -24px;
-  left: 0;
-
-  display: block;
-  width: 100%;
-  height: 1px;
-  background-color: var(--contacts-card-border-color);
-}
-
 .contacts__block {
   line-height: 1.5;
   color: var(--secondary-text-color);
-  margin-top: 48px;
 }
 
 .contacts__link {
@@ -166,9 +174,24 @@
   }
 }
 
+.contacts__link--phone {
+  padding-top: 24px;
+}
+
+.contacts__link--email {
+  padding-bottom: 24px;
+}
+
 .contacts__button-wrapper {
   width: fit-content;
-  margin: 32px auto 0;
+  margin-top: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+
+  @include mq('tablet') {
+    margin-top: 60px;
+  }
 }
 
 .contacts__icon {
@@ -192,12 +215,4 @@
     display: flex;
     justify-content: center;
   }
-}
-
-.contacts__tel {
-  padding-top: 24px;
-}
-
-.contacts__mail {
-  padding-bottom: 40px;
 }
