@@ -111,8 +111,43 @@
   }
   }
 
+
 .franchise__button {
  
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: block;
+
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  z-index: 200;
+
+  width: 60px;
+  height: 30px;
+
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+
+  background: var(--second-background-color);
+  transition: color 250ms var(--transition-timing),
+    border-color 250ms var(--transition-timing);
+  cursor: pointer;
+  color: #000000;
+
+  &:hover,
+  &:focus {
+    color: rgb(214, 57, 167);
+    border-color: rgb(214, 57, 167);
+  }
+}
+
+.submit-btn__franchise {
+  
+
   margin-top: 15px;
   margin-left: auto;
   margin-right: auto;
