@@ -33,6 +33,11 @@
   box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
   padding: 40px 32px 16px 32px;
+  max-width: 280px;
+// position: relative;
+// overflow: hidden;
+// transition: all .8s;
+
 
   @include mq(mobile-only) {
     max-width: 280px;
@@ -68,14 +73,9 @@
     }
   }
 
-  // transform: scale(1);
-  // transition: transform 250ms var(--transition-timing);
-
-  // &:hover {
-  //   transform: scale(1.1);
-  //   z-index: 1;
-  // }
-}
+.contacts-card:hover {
+  transform: scale(1.1);
+     }
 
 .contacts-card__top {
   padding-bottom: 24px;
@@ -102,17 +102,6 @@
   }
 }
 
-// .contacts-card__bottom {
-//   padding-top: 32px;
-
-//   @include mq(tablet) {
-//     padding-top: 32px;
-//   }
-
-//   @include mq(desktop) {
-//     padding-top: 32px;
-//   }
-// }
 
 .contacts-card__uppertitle {
   text-align: center;
@@ -159,7 +148,7 @@
 }
 
 .working-hours__item {
-  //   position: relative;
+ 
   &:not(:last-child) {
     margin-bottom: 8px;
   }
