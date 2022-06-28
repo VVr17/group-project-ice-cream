@@ -5,6 +5,10 @@
   @include mq('tablet') {
     padding-bottom: 4px;
 }
+
+@include mq('desktop') {
+  padding-top: 60px;
+}
 }
 
 .footer__group {
