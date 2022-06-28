@@ -4,11 +4,17 @@
   &--padding-top {
     padding-top: 60px;
   }
+
+  &--padding-top-desktop {
+    @include mq('desktop') {
+      padding-top: 60px;
+    }
+  }
 }
 
 .section__uppertitle {
   margin-bottom: 15px;
-  
+
   font-family: var(--secondary-font);
   font-size: 18px;
   text-align: center;
@@ -25,7 +31,7 @@
 
   @media screen and (min-width: 1200px) {
     margin-bottom: 16px;
-    
+
     font-size: 30px;
     line-height: 1.13;
   }

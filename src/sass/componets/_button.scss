@@ -94,35 +94,26 @@
   }
   }
 
+ 
+}
+.button--red {
+  @include mq(tablet) {
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+  }
+
   @include mq(desktop) {
    
     &:not(:last-child) {
       margin-right: 12px;
     }
   }
-}
+  }
+
 
 .franchise__button {
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
-  // position: absolute;
-  // top: 8px;
-  // right: 8px;
-  // width: 30px;
-  // height: 30px;
-  // cursor: pointer;
-  // fill: var(--white-color);
-  // background-color: var(--accent-color);
-  // border: 1px solid transparent;
-  // border-radius: 50%;
-  // transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  // &:hover,
-  // &:focus {
-  //   fill: var(--accent-color);
-  //   background-color: var(--white-color);
-  // }
+ 
 
   display: flex;
   justify-content: center;
@@ -155,27 +146,7 @@
 }
 
 .submit-btn__franchise {
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
-  // min-width: 162px;
-  // padding: 12px 17px;
-  // margin-left: auto;
-  // margin-right: auto;
-
-  // font-size: 16px;
-  // font-weight: 700;
-  // line-height: 1.31;
-
-  // color: var(--white-color);
-  // background-color: var(--accent-color);
-
   
-  // &:hover,
-  // &:focus {
-  //   color: var(--accent-color);
-  //   background-color: var(--white-color);
-  // }
 
   margin-top: 15px;
   margin-left: auto;
