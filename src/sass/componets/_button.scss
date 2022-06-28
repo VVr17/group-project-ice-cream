@@ -4,8 +4,8 @@
   padding: 0;
   cursor: pointer;
 
-  transition: background-color 250ms var(--transition-timing) 200ms,
-    color 250ms var(--transition-timing) 300ms;
+  transition: background-color 250ms var(--transition-timing),
+    color 250ms var(--transition-timing);
 
   &--white {
     color: var(--accent-color);
