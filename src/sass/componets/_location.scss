@@ -23,7 +23,7 @@
   & .location__modal-wrapper {
     transform: scale(0.9);
 
-    @include mq('desktop') {
+    @include mq('tablet') {
       transform: translate(-50%, -50%) scale(0.9);
     }
   }
