@@ -3,8 +3,8 @@
     <p class="section__uppertitle">100% natural</p>
     <h2 class="section__title">products</h2>
     <ul class="products__list list">
-      <li id="myFlipCard" class="products__item products-card">
-        <div class="products__flip-box">
+      <li  class="products__item products-card">
+        <div class="products__flip-box" flip-card>
           <div class="products-card__wrapper products-card__wrapper--ice-cream">
             <h3 class="products-card__name">ice cream</h3>
             <p class="products-card__text">
@@ -13,9 +13,9 @@
               facilisis.
             </p>
             <button
-              onclick="addFlip()"
               type="button"
               class="products-card__btn"
+              rotate-right
             >
               <svg
                 class="products-card__icon products-card__icon--ice-cream"
@@ -45,9 +45,9 @@
               </svg>
             </button>
             <button
-              onclick="backFlip()"
+              rotate-back
               type="button"
-              class="products-card__btn"
+              class="products-card__btn products-card__btn--left"
             >
               <svg
                 class="products-card__icon products-card__icon--ice-cream"
@@ -61,7 +61,7 @@
         </div>
       </li>
       <li class="products__item products-card">
-        <div class="products__flip-box">
+        <div class="products__flip-box" flip-card-2>
           <div class="products__back-side back-side back-side--ice-coffee">
             <h3 class="back-side__title">Ingredients:</h3>
             <ul class="back-side__ingredients list">
@@ -80,7 +80,7 @@
                 <use href="./images/sprite.svg#right-pointer"></use>
               </svg>
             </button>
-            <button type="button" class="products-card__btn">
+            <button type="button" class="products-card__btn products-card__btn--left" rotate-back-2>
               <svg
                 class="products-card__icon products-card__icon--ice-cream"
                 width="11"
@@ -99,7 +99,7 @@
               eiusmod tempor incididunt ut labore et. dolore magna aliqua
               facilisis.
             </p>
-            <button type="button" class="products-card__btn">
+            <button type="button" class="products-card__btn" rotate-right-2>
               <svg
                 class="products-card__icon products-card__icon--ice-coffee"
                 width="11"
@@ -112,7 +112,7 @@
         </div>
       </li>
       <li class="products__item products-card">
-        <div class="products__flip-box">
+        <div class="products__flip-box" flip-card-3>
           <div class="products__back-side back-side back-side--milkshakes">
             <h3 class="back-side__title">Ingredients:</h3>
             <ul class="back-side__ingredients list">
@@ -131,7 +131,7 @@
                 <use href="./images/sprite.svg#right-pointer"></use>
               </svg>
             </button>
-            <button type="button" class="products-card__btn">
+            <button type="button" class="products-card__btn products-card__btn--left" rotate-back-3>
               <svg
                 class="products-card__icon products-card__icon--ice-cream"
                 width="11"
@@ -150,7 +150,7 @@
               eiusmod tempor incididunt ut labore et. dolore magna aliqua
               facilisis.
             </p>
-            <button type="button" class="products-card__btn">
+            <button type="button" class="products-card__btn" rotate-right-3>
               <svg
                 class="products-card__icon products-card__icon--milkshakes"
                 width="11"
