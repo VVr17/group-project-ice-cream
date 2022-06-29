@@ -263,6 +263,12 @@
   }
 }
 
+.products-card__btn--left {
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    margin-top: 65px;
+  }
+}
+
 .products-card__icon {
   fill: var(--accent-color);
   transition: fill 250ms var(--transition-timing);
@@ -428,6 +434,10 @@
   &:hover .back-side__icon,
   &:focus .back-side__icon {
     stroke: var(--white-color);
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 45px;
   }
 }
 
