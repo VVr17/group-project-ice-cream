@@ -23,7 +23,19 @@
   & .location__modal-wrapper {
     transform: scale(0.9);
 
-    @include mq('tablet') {
+    @media screen and (min-width: 480px) and (orientation: portrait) {
+      transform: translate(-50%, -50%) scale(1);
+    }
+
+    @media screen and (min-width: 480px) and (orientation: landscape) {
+      transform: scale(0.9);
+    }
+
+    @media screen and (min-width: 768px) and (min-height: 655px) {
+      transform: translate(-50%, -50%) scale(0.9);
+    }
+
+    @include mq('desktop') {
       transform: translate(-50%, -50%) scale(0.9);
     }
   }
@@ -41,7 +53,8 @@
   height: 500px;
   width: 100%;
   transform: scale(1);
-  transition: transform 250ms var(--transition-timing);
+  transition: transform 250ms var(--transition-timing),
+    opacity 250ms var(--transition-timing);
   background: var(--second-background-color);
   box-shadow: 0px 0px 50px 14px rgba(255, 165, 186, 0.34);
 
@@ -74,6 +87,7 @@
   @include mq('desktop') {
     max-width: 800px;
     height: 600px;
+    transform: translate(-50%, -50%) scale(1);
   }
 }
 

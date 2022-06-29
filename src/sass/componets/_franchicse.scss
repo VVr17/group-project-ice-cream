@@ -26,7 +26,20 @@
 
   & .franchise__modal-wrapper {
     transform: scale(0.9);
-    @include mq('tablet') {
+
+    @media screen and (min-width: 480px) and (orientation: portrait) {
+      transform: translate(-50%, -50%) scale(1);
+    }
+
+    @media screen and (min-width: 480px) and (orientation: landscape) {
+      transform: scale(0.9);
+    }
+
+    @media screen and (min-width: 768px) and (min-height: 655px) {
+      transform: translate(-50%, -50%) scale(0.9);
+    }
+
+    @include mq('desktop') {
       transform: translate(-50%, -50%) scale(0.9);
     }
   }
@@ -40,13 +53,13 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 24px;
 
-  transition: transform cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 100;
   max-width: 450px;
   width: 100%;
 
   transform: scale(1);
-  transition: transform 250ms var(--transition-timing);
+  transition: transform 250ms var(--transition-timing),
+    opacity 250ms var(--transition-timing);
 
   @include mq(mobile-only) {
     max-width: 450px;
@@ -61,6 +74,10 @@
     position: absolute;
     top: 50%;
     left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  @include mq('desktop') {
     transform: translate(-50%, -50%) scale(1);
   }
 }
