@@ -79,8 +79,8 @@ position: relative;
  }
 
 
-.contacts-card::before {
-// .contacts-card::after {
+.contacts-card::before,
+ .contacts-card::after {
   content: '';
   position: absolute;
   width: 370%;
@@ -96,22 +96,23 @@ position: relative;
  opacity: 0;
   transform: skew(-45deg) translateX(100%);
 }
-// .contacts-card::after {
-//   left: 0;
-//   top: -100%;
-//   background: rgba(130, 25, 93, 0.05);
-//   opacity: 0;
-//   transform: skew(135deg) translateX(-100%);
-// }
+ .contacts-card::after {
+  pointer-events: none;
+   left: 0;
+   top: -100%;
+   background: rgba(130, 25, 93, 0.05);
+   opacity: 0;
+   transform: skew(135deg) translateX(-100%);
+ }
 .contacts-card:hover::before {
   transform: skew(-45deg) translateX(0%);
   opacity: 1;
 }
-// .contacts-card:hover::after {
-//   opacity: 1;
+ .contacts-card:hover::after {
+   opacity: 1;
  
-//   transform: skew(135deg) translateX(0%);
-// }
+   transform: skew(135deg) translateX(0%);
+ }
 
 
 .contacts-card__top {
