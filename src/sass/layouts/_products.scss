@@ -69,9 +69,13 @@
   transform-style: preserve-3d;
 }
 
-.products__item:hover .products__flip-box {
+.products__flip-box.flip {
   transform: rotateY(180deg);
 }
+
+// .products__item:hover .products__flip-box {
+//   transform: rotateY(180deg);
+// }
 
 .products-card__wrapper, .products__back-side {
   position: absolute;
