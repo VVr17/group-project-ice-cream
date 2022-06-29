@@ -56,24 +56,17 @@
   z-index: 100;
   max-width: 450px;
   width: 100%;
+
   transform: scale(1);
   transition: transform 250ms var(--transition-timing),
     opacity 250ms var(--transition-timing);
 
-  @media screen and (min-width: 480px) and (orientation: portrait) {
-    width: 450px;
+  @include mq(mobile-only) {
+    max-width: 450px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-  }
-
-  @media screen and (min-width: 480px) and (orientation: landscape) {
-    width: 450px;
-    position: relative;
-    padding: 40px;
-    margin: auto auto;
-    transform: scale(1);
   }
 
   @media screen and (min-width: 768px) and (min-height: 655px) {
@@ -116,7 +109,7 @@
   color: var(--accent-color);
 
   @media screen and (min-width: 480px) {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   @media screen and (min-width: 768px) {
