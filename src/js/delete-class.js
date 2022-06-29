@@ -20,9 +20,10 @@
 const list = document.querySelectorAll('.mobile-menu__naviation li a')
  list.forEach(item =>{ 
         item.addEventListener('click', (e) =>{
-        list.forEach(el=>{ document.classList.remove('is-open'); });
-        // item.classList.add('active')
-    })
+        list.forEach(el=>{  elem = document.getElementById("myDIV");
+        element.classList.removeClass("is-open");
+     });
+     })
 })
 
     
