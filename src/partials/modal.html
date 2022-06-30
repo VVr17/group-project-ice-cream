@@ -1,7 +1,4 @@
 <div class="container">
-  <!-- <button type="button" class="modal__open-button" data-modal-open>
-    Buy now
-  </button>  -->
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <button class="modal__closing-button" type="button" data-modal-close>
@@ -10,18 +7,18 @@
       <div class="swiper mySwiper1">
         <div class="swiper-wrapper">
           <div class="swiper-slide ice-cream">
-            <!-- <picture>
+            <picture>
               <source
                 srcset="
-                  ./images/modal/ice-cream-modal.webp 1x,
-                  ./images/modal/ice-cream-modal.webp 2x
+                  ./images/modal/ice-cream-modal.webp    1x,
+                  ./images/modal/ice-cream-modal@2x.webp 2x
                 "
                 type="image/webp"
               />
               <source
                 srcset="
-                  ./images/modal/ice-cream-modal.png 1x,
-                  ./images/modal/ice-cream-modal.png 2x
+                  ./images/modal/ice-cream-modal.png    1x,
+                  ./images/modal/ice-cream-modal@2x.png 2x
                 "
                 type="image/png"
               />
@@ -34,101 +31,96 @@
                 height="112"
                 loading="lazy"
               />
-            </picture> -->
-            <img class="modal-img" srcset="
-                ./images/modal/ice-cream-modal.webp    1x,
-                ./images/modal/ice-cream-modal@2x.webp 2x
-              " src="./images/modal/ice-cream-modal.webp" alt="ice cream" width="150" height="150" loading="lazy" />
+            </picture>
+       
           </div>
-          <div class="swiper-slide ice-coffee">
-            <!-- <picture>
-              <source
-                srcset="
-                  ./images/modal/ice-coffee-modal.webp 1x,
-                  ./images/modal/ice-coffee-modal.webp 2x
-                "
-                type="image/webp"
-              />
-              <source
-                srcset="
-                  ./images/modal/ice-coffee-modal.png 1x,
-                  ./images/modal/ice-coffee-modal.png 2x
-                "
-                type="image/png"
-              />
+            <div class="swiper-slide ice-coffee">
+              <picture>
+                <source
+                  srcset="
+                    ./images/modal/ice-coffee-modal.webp    1x,
+                    ./images/modal/ice-coffee-modal@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/modal/ice-coffee-modal.png    1x,
+                    ./images/modal/ice-coffee-modal@2x.png 2x
+                  "
+                  type="image/png"
+                />
 
-              <img
-                class="modal-img"
-                src="./images/modal/ice-coffee-modal.webp"
-                alt="ice-coffee"
-                width="112"
-                height="112"
-                loading="lazy"
-              />
-            </picture> -->
-            <img class="modal-img" srcset="
-                ./images/modal/ice-coffee-modal.webp    1x,
-                ./images/modal/ice-coffee-modal@2x.webp 2x
-              " src="./images/modal/ice-coffee-modal.webp " alt="ice-coffee" width="150" height="150" loading="lazy" />
-          </div>
-          <div class="swiper-slide milkshakes">
-            <!-- <picture>
-              <source
-                srcset="
-                  ./images/modal/milkshakes-modal.webp 1x,
-                  ./images/modal/milkshakes-modal.webp 2x
-                "
-                type="image/webp"
-              />
-              <source
-                srcset="
-                  ./images/modal/milkshakes-modal.png 1x,
-                  ./images/modal/milkshakes-modal.png 2x
-                "
-                type="image/png"
-              />
+                <img
+                  class="modal-img"
+                  src="./images/modal/ice-coffee-modal.webp"
+                  alt="ice-coffee"
+                  width="150"
+                  height="150"
+                  loading="lazy"
+                />
+              </picture>
+            
+            </div>
+            <div class="swiper-slide milkshakes">
+              <picture>
+                <source
+                  srcset="
+                    ./images/modal/milkshakes-modal@2x.webp 1x,
+                    ./images/modal/milkshakes-modal@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/modal/milkshakes-modal@2x.png 1x,
+                    ./images/modal/milkshakes-modal@2x.png 2x
+                  "
+                  type="image/png"
+                />
 
-              <img
-                class="modal-img"
-                src="./images/modal/milkshakes-modal.webp"
-                alt="milkshakes"
-                width="112"
-                height="112"
-                loading="lazy"
-              />
-            </picture> -->
-            <img class="modal-img" srcset="
-                ./images/modal/milkshakes-modal.webp    1x,
-                ./images/modal/milkshakes-modal@2x.webp 2x
-              " src=" ./images/modal/milkshakes-modal.webp" alt="milkshakes" width="150" height="150" loading="lazy" />
+                <img
+                  class="modal-img"
+                  src="./images/modal/milkshakes-modal.webp"
+                  alt="milkshakes"
+                  width="150"
+                  height="150"
+                  loading="lazy"
+                />
+              </picture>
+          
+            </div>
           </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
         </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
+        <p class="modal__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, nihil.
+        </p>
+        <form class="modal__form">
+          <label class="modal-field"
+            >Name
+            <input class="modal-input" type="text" name="name" />
+          </label>
+          <label class="modal-field"
+            >Phone
+            <input class="modal-input" type="tel" name="tel" />
+          </label>
+          <label class="modal-field"
+            >Mail
+
+            <input class="modal-input" type="email" name="email" />
+          </label>
+          <label class="modal-field"
+            >Quantity
+
+            <input class="modal-input" type="text" name="name" />
+          </label>
+
+          <button type="submit" class="modal__button">Bon appetit</button>
+        </form>
       </div>
-      <p class="modal__text">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, nihil.
-      </p>
-      <form class="modal__form">
-        <label class="modal-field">Name
-          <input class="modal-input" type="text" name="name" />
-        </label>
-        <label class="modal-field">Phone
-          <input class="modal-input" type="tel" name="tel" />
-        </label>
-        <label class="modal-field">Mail
-
-          <input class="modal-input" type="email" name="email" />
-        </label>
-        <label class="modal-field">Quantity
-
-          <input class="modal-input" type="text" name="name" />
-        </label>
-
-        <button type="submit" class="modal__button">Bon appetit</button>
-      </form>
     </div>
   </div>
 </div>
-
