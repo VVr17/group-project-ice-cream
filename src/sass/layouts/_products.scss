@@ -72,15 +72,17 @@
   transform: rotateY(180deg);
 }
 
-  &.flip .products-card__wrapper {
+  &.flip .products-card__btn {
     visibility: hidden;
   }
 
-  & .back-side {
+  & .products-card__btn--left,
+  & .back-side__button {
     visibility: hidden;
   }
 
-  &.flip .back-side {
+  &.flip .products-card__btn--left,
+  &.flip .back-side__button {
     visibility: visible;
   }
 }
@@ -313,7 +315,7 @@
   margin: 0 auto;
   top: -140px;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%) scaleX(-1);
   width: 280px;
   height: 280px;
   background-image: url('../images/products/ice-cream.png');
@@ -343,7 +345,7 @@
   margin: 0 auto;
   top: -140px;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%) scaleX(-1);
   width: 280px;
   height: 280px;
   background-image: url('../images/products/ice-coffee.png');
@@ -373,7 +375,7 @@
   margin: 0 auto;
   top: -140px;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%) scaleX(-1);
   width: 280px;
   height: 280px;
   background-image: url('../images/products/milkshakes.png');
