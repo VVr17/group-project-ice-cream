@@ -3,11 +3,40 @@
     <button class="modal__closing-button" data-location-close>close
     </button>
     <strong class="location__title">Our location</strong>
-
+    <!-- 
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2968.5353545528988!2d-87.6972509!3d41.92434629999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd29d7c79d085%3A0xc19ae13c746621e!2sPretty%20Cool%20Ice%20Cream!5e0!3m2!1sen!2sde!4v1656411712903!5m2!1sen!2sde"
       width="100%" height="90%" style="border:0;" allowfullscreen="" loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade"></iframe>
+      referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+    <picture>
+      <source media="(min-width: 1200px)" srcset="
+              ./images/location/location-map-lg.webp 1x,
+              ./images/location/location-map-lg@2x.webp 2x
+            " type="image/webp" />
+      <source media="(min-width: 1200px)" srcset="
+              ./images/location/location-map-md.jpg 1x,
+              ./images/location/location-map-md@2x.jpg 2x
+            " type="image/jpg" />
 
+      <source media="(min-width: 768px)" srcset="
+              ./images/location/location-map-md.webp 1x,
+              ./images/location/location-map-md@2x.webp 2x
+            " type="image/webp" />
+      <source media="(min-width: 768px)" srcset="
+              ./images/location/location-map-md.jpg 1x,
+              ./images/location/location-map-md@2x.jpg 2x
+            " type="image/jpg" />
+
+      <source media="(max-width: 767.98px)" srcset="
+                    ./images/location/location-map-sm.webp 1x,
+                    ./images/location/location-map-sm@2x.webp 2x
+                  " type="image/webp" />
+      <source media="(max-width: 767.98px)" srcset="
+                    ./images/location/location-map-sm.jpg 1x,
+                    ./images/location/location-map-sm@2x.jpg 2x
+                  " type="image/jpg" />
+      <img class="image location__map" src="./images/location/location-map-sm.jpg" alt="map" width="400" height="400">
+    </picture>
+    <a class="link location__link" href="https://goo.gl/maps/qQecCGS6HJRpUrFf7" target="_blank">View larger map</a>
   </div>
 </div>

@@ -45,13 +45,12 @@
   padding-top: 20px;
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 8px;
   background-color: var(--secondary-accent-color);
   opacity: 1;
   border-radius: 24px;
   z-index: 100;
-  max-width: 600px;
-  height: 500px;
+  max-width: 500px;
   width: 100%;
   transform: scale(1);
   transition: transform 250ms var(--transition-timing),
@@ -60,8 +59,7 @@
   box-shadow: 0px 0px 50px 14px rgba(255, 165, 186, 0.34);
 
   @media screen and (min-width: 480px) and (orientation: portrait) {
-    max-width: 600px;
-    height: 500px;
+    max-width: 500px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -69,8 +67,7 @@
   }
 
   @media screen and (min-width: 480px) and (orientation: landscape) {
-    max-width: 600px;
-    height: 500px;
+    max-width: 500px;
     position: relative;
     margin: auto auto;
     transform: scale(1);
@@ -78,7 +75,6 @@
 
   @media screen and (min-width: 768px) and (min-height: 655px) {
     max-width: 600px;
-    height: 500px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -86,15 +82,39 @@
   }
 
   @include mq('desktop') {
-    padding-bottom: 10px;
-    max-width: 800px;
-    height: 600px;
+    max-width: 900px;
     transform: translate(-50%, -50%) scale(1);
   }
 }
 
-.location__title {
+.location__map {
+  margin: auto;
+
+  @include mq('tablet') {
+    width: 570px;
+  }
+
+  @include mq('tablet') {
+    width: 800px;
+  }
+}
+
+.location__link {
+  display: flex;
+  justify-content: center;
   font-size: 16px;
+  font-weight: 500;
+  padding: 12px;
+
+  color: var(--secondary-text-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.location__title {
+  font-size: 20px;
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.04em;
