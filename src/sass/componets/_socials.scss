@@ -1,51 +1,39 @@
 .socials {
-    display: flex;
-    justify-content: end;
-    align-items: flex-end;
-    margin-bottom: 20px;
-    
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+  margin-bottom: 40px;
+}
 
-    @include mq('tablet') {
-    margin-bottom: 24px;
-    }
+.socials__item:not(:last-child) {
+  margin-right: 28.24px;
 
-    @include mq('desktop') {
-      margin-bottom: 20px;
-    }
-  }
-  
-  .socials__item:not(:last-child) {
-    margin-right: 28.24px;
-
-    @include mq('tablet') {
+  @include mq('tablet') {
     margin-right: 30px;
-      }
   }
-  
-  .socials__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+}
 
-    width: 32px;
-    height: 32px;
- 
-    color: var(--icons-color);
-    cursor: pointer;
-  
-    border-radius: 50%;
+.socials__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    transition: color 250ms var(--transition-timing);
+  width: 32px;
+  height: 32px;
 
-    &:hover,
-    &:focus {
+  color: var(--icons-color);
+  cursor: pointer;
+
+  border-radius: 50%;
+
+  transition: color 250ms var(--transition-timing);
+
+  &:hover,
+  &:focus {
     color: var(--accent-color);
-    }
+  }
+}
 
-  }
-  
-  .socials__icon {
-    fill: currentColor;
-    
-  }
-  
+.socials__icon {
+  fill: currentColor;
+}
