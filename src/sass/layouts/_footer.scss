@@ -118,16 +118,16 @@
 
 .footer__phone {
   display: inline-block;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  // padding-top: 20px;
+  // padding-bottom: 20px;
   text-decoration: none;
   color: var(--accent-color);
 
   transition: color 250ms var(--transition-timing);
 
-  @include mq('desktop') {
-    padding-bottom: 0;
-  }
+  // @include mq('desktop') {
+  //   padding-bottom: 0;
+  // }
 
   &:hover,
   &:focus {
