@@ -14,7 +14,7 @@
     }
     @include mq('desktop') {
       max-width: 1090px;
-      gap: 110px;
+      gap: 125px;
     }
   }
 }
@@ -29,7 +29,7 @@
   }
 
   @include mq('desktop') {
-    max-width: 290px;
+    max-width: 280px;
   }
 
   &:not(:last-child) {
@@ -82,6 +82,10 @@
       background-image: url('../images/icons/heart@2x.webp');
     }
   }
+
+  &:focus {
+    outline: transparent;
+  }
 }
 
 .advantages__number {
@@ -95,8 +99,8 @@
   text-transform: uppercase;
   color: var(--accent-color);
   transform: scale(1);
-  &:hover,
-  &:focus {
+  .advantages__item:hover &,
+  .advantages__item:focus & {
     color: #bf0f3b;
     animation: translateX-1 1000ms var(--transition-timing) infinite normal;
   }
@@ -107,9 +111,15 @@
   font-size: 12px;
   line-height: 1.7;
   color: var(--main-black-text-color);
+  @include mq('tablet') {
+    font-size: 14px;
+  }
+  @include mq('desktop') {
+    font-size: 16px;
+  }
 
-  &:hover,
-  &:focus {
+  .advantages__item:hover &,
+  .advantages__item:focus & {
     animation: translateX-2 1000ms var(--transition-timing) 1 normal;
   }
 }
@@ -133,15 +143,143 @@
 }
 @keyframes translateX-2 {
   0% {
-    transform: translateX(10px);
+    transform: scale(1);
   }
-  33% {
-    transform: translateX(0px);
+  25% {
+    transform: scale(1.1);
   }
-  66% {
-    transform: translateX(10px);
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.1);
   }
   100% {
-    transform: translateX(0px);
+    transform: scale(1);
+  }
+}
+.advantages {
+  background-color: var(--second-background-color);
+  &__list {
+    max-width: 320px;
+    @include mq('mobile-only') {
+      margin: 0 auto;
+    }
+    @include mq('tablet') {
+      display: flex;
+    }
+    @include mq('tablet-only') {
+      max-width: 520px;
+      gap: 20px;
+    }
+    @include mq('desktop') {
+      max-width: 1090px;
+      gap: 125px;
+    }
+  }
+}
+
+.advantages__item {
+  position: relative;
+  padding-top: 66px;
+  max-width: 230px;
+
+  @include mq('tablet-only') {
+    max-width: 175px;
+  }
+
+  @include mq('desktop') {
+    max-width: 280px;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
+
+  @include mq('tablet') {
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+  &::before {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &:nth-child(1):before {
+    background-image: url('../images/icons/milk.png');
+    background-image: url('../images/icons/milk.webp');
+
+    @include mq('retina') {
+      background-image: url('../images/icons/milk@2x.png');
+      background-image: url('../images/icons/milk@2x.webp');
+    }
+  }
+
+  &:nth-child(2):before {
+    background-image: url('../images/icons/apples.png');
+    background-image: url('../images/icons/apples.webp');
+
+    @include mq('retina') {
+      background-image: url('../images/icons/apples@2x.png');
+      background-image: url('../images/icons/apples@2x.webp');
+    }
+  }
+
+  &:nth-child(3):before {
+    background-image: url('../images/icons/heart.png');
+    background-image: url('../images/icons/heart.webp');
+
+    @include mq('retina') {
+      background-image: url('../images/icons/heart@2x.png');
+      background-image: url('../images/icons/heart@2x.webp');
+    }
+  }
+
+  &:focus {
+    outline: transparent;
+  }
+}
+
+.advantages__number {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-family: var(--secondary-font);
+  font-size: 36px;
+  line-height: 41px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--accent-color);
+  transform: scale(1);
+  .advantages__item:hover &,
+  .advantages__item:focus & {
+    color: #bf0f3b;
+    animation: translateX-1 1000ms var(--transition-timing) infinite normal;
+  }
+}
+
+.advantages__text {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.7;
+  color: var(--main-black-text-color);
+  @include mq('tablet') {
+    font-size: 14px;
+  }
+  @include mq('desktop') {
+    font-size: 16px;
+  }
+
+  .advantages__item:hover &,
+  .advantages__item:focus & {
+    animation: translateX-2 1000ms var(--transition-timing) 1 normal;
   }
 }

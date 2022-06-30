@@ -36,6 +36,7 @@
   padding: 25px;
   width: 100%;
   max-width: 450px;
+  transition: transform 250ms var(--transition-timing);
 
   @media screen and (max-width: 479.98px) {
     margin-left: auto;
@@ -109,7 +110,7 @@
 
   &:hover,
   &:focus {
-    color: rgb(214, 57, 167);
+    color: var(--accent-color);
   }
 }
 
@@ -139,8 +140,8 @@
 
   &:hover,
   &:focus {
-    color: rgb(214, 57, 167);
-    border-color: rgb(214, 57, 167);
+    color: var(--accent-color);
+    border-color: var(--accent-color);
   }
 }
 
@@ -178,9 +179,9 @@
 //  КАРТИНКА
 .swiper-slide::after {
   content: ' ';
-  font-family: 'Titan One';
+  font-family: var(--secondary-font);
   font-style: normal;
-  font-weight: 400;
+  // font-weight: 400;
   font-size: 24px;
   line-height: 1.5;
   /* identical to box height */
@@ -189,7 +190,7 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
 
-  color: #d41443;
+  color: var(--accent-color);
 }
 
 .ice-cream.swiper-slide,
@@ -232,23 +233,29 @@
   display: flex;
   flex-direction: column;
 
-  cursor: pointer;
 
-  font-family: 'DM Sans';
+  font-family: var(--main-font);
   font-style: normal;
-  font-weight: 500;
+  font-weight: var(--main-font-weight);
   font-size: 14px;
   line-height: 1.94;
   /* or 27px */
-
+  transition: color 250ms var(--transition-timing);
   letter-spacing: 0.04em;
 
   color: #907e82;
+  cursor: text;
+
+  &:focus-within {
+    color: var(--accent-color);
+  }
 }
 
-.modal-field:focus-within .modal-input,
+.modal-field:hover,
+.modal-field:focus .modal-field:focus-within .modal-input,
 .modal-field:hover .modal-input {
-  border-color: rgb(214, 57, 167);
+  color: var(--accent-color);
+  border-color: var(--accent-color);
 }
 
 .modal-field:not(:first-child) {
@@ -263,6 +270,8 @@
   border-radius: 4px;
 
   outline: none;
+  background-color: var(--white-color);
+  padding-left: 20px;
 
   cursor: inherit;
   transition: border-color 250ms var(--transition-timing);
@@ -293,12 +302,11 @@
   transition: color 250ms var(--transition-timing),
     border-color 250ms var(--transition-timing);
   cursor: pointer;
-  color: #000000;
+  // color: #000000;
 
   &:hover,
   &:focus {
-    color: rgb(214, 57, 167);
-    border-color: rgb(214, 57, 167);
+    color: var(--accent-color);
+    border-color: var(--accent-color);
   }
 }
-
