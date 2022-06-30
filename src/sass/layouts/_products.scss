@@ -67,17 +67,30 @@
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
+
+  &.flip {
+  transform: rotateY(180deg);
 }
 
-.products__flip-box.flip {
-  transform: rotateY(180deg);
+  &.flip .products-card__wrapper {
+    visibility: hidden;
+  }
+
+  & .back-side {
+    visibility: hidden;
+  }
+
+  &.flip .back-side {
+    visibility: visible;
+  }
 }
 
 // .products__item:hover .products__flip-box {
 //   transform: rotateY(180deg);
 // }
 
-.products-card__wrapper, .products__back-side {
+.products-card__wrapper,
+.products__back-side {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -184,7 +197,7 @@
     background-image: url('../images/products/milkshakes-desktop.png');
     width: 368px;
     height: 394px;
-    top: -250px;  
+    top: -250px;
   }
 }
 
