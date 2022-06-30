@@ -26,14 +26,14 @@
 
   @include mq(desktop) {
     background-image: url(../images/about/about-bg_lg1x.png);
-    background-image: -webkit-image-set(url(../images/about/about-bg_lg1x.webp) 1x);
+    // background-image: -webkit-image-set(url(../images/about/about-bg_lg1x.webp) 1x);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: top;
 
     @include mq(retina) {
       background-image: url(../images/about/about-bg_lg2x.png);
-      background-image: -webkit-image-set(url(../images/about/about-bg_lg2x.webp) 2x);
+      //   background-image: -webkit-image-set(url(../images/about/about-bg_lg2x.webp) 2x);
     }
   }
 }
@@ -73,7 +73,9 @@
     line-height: 1.62;
 
     background-image: url(../images/about/about-bg_sm1x.png);
-    background-image: -webkit-image-set(url(../images/about/about-bg_sm1x.webp) 1x);
+    background-image: -webkit-image-set(
+      //   url(../images/about/about-bg_sm1x.webp) 1x
+    );
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -81,7 +83,9 @@
 
     @include mq(retina) {
       background-image: url(../images/about/about-bg_sm2x.png);
-      background-image: -webkit-image-set(url(../images/about/about-bg_sm2x.webp) 2x);
+      background-image: -webkit-image-set(
+        // url(../images/about/about-bg_sm2x.webp) 2x
+      );
     }
   }
 
@@ -140,7 +144,8 @@
     max-width: 230px;
   }
 
-  @include mq(tablet) {}
+  @include mq(tablet) {
+  }
 }
 
 #content.open {

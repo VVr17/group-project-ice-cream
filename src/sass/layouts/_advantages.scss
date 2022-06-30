@@ -58,8 +58,8 @@
     background-image: url('../images/icons/milk.webp');
 
     @include mq('retina') {
-      background-image: url('../images/icons/milk@2x.png');
-      background-image: url('../images/icons/milk@2x.webp');
+      background-image: url('../images/icons/milk_2x.png');
+      background-image: url('../images/icons/milk_2x.webp');
     }
   }
 
@@ -68,8 +68,8 @@
     background-image: url('../images/icons/apples.webp');
 
     @include mq('retina') {
-      background-image: url('../images/icons/apples@2x.png');
-      background-image: url('../images/icons/apples@2x.webp');
+      background-image: url('../images/icons/apples_2x.png');
+      background-image: url('../images/icons/apples_2x.webp');
     }
   }
 
@@ -78,8 +78,8 @@
     background-image: url('../images/icons/heart.webp');
 
     @include mq('retina') {
-      background-image: url('../images/icons/heart@2x.png');
-      background-image: url('../images/icons/heart@2x.webp');
+      background-image: url('../images/icons/heart_2x.png');
+      background-image: url('../images/icons/heart_2x.webp');
     }
   }
 
@@ -158,6 +158,7 @@
     transform: scale(1);
   }
 }
+
 .advantages {
   background-color: var(--second-background-color);
   &__list {
@@ -218,8 +219,8 @@
     background-image: url('../images/icons/milk.webp');
 
     @include mq('retina') {
-      background-image: url('../images/icons/milk@2x.png');
-      background-image: url('../images/icons/milk@2x.webp');
+      background-image: url('../images/icons/milk_2x.png');
+      background-image: url('../images/icons/milk_2x.webp');
     }
   }
 
@@ -228,8 +229,8 @@
     background-image: url('../images/icons/apples.webp');
 
     @include mq('retina') {
-      background-image: url('../images/icons/apples@2x.png');
-      background-image: url('../images/icons/apples@2x.webp');
+      background-image: url('../images/icons/apples_2x.png');
+      background-image: url('../images/icons/apples_2x.webp');
     }
   }
 
@@ -238,8 +239,8 @@
     background-image: url('../images/icons/heart.webp');
 
     @include mq('retina') {
-      background-image: url('../images/icons/heart@2x.png');
-      background-image: url('../images/icons/heart@2x.webp');
+      background-image: url('../images/icons/heart)2x.png');
+      background-image: url('../images/icons/heart_2x.webp');
     }
   }
 
