@@ -165,10 +165,6 @@
   border: none;
   cursor: pointer;
   animation: slide-top 1s linear 2s infinite alternate both;
-
-   @include mq(tablet-only) {
-    display: none;
-  }
   
 }
 .arrow {
