@@ -13,8 +13,6 @@
 }
 
 .section__uppertitle {
-  margin-bottom: 15px;
-
   font-family: var(--secondary-font);
   font-size: 18px;
   text-align: center;
@@ -38,6 +36,8 @@
 }
 
 .section__title {
+  margin-top: 15px;
+
   font-family: var(--secondary-font);
   font-size: 34px;
   font-weight: 400;
