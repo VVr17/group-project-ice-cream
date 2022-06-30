@@ -1,8 +1,9 @@
 (() => {
   const refs = {
-    rotateRightBtn: document.querySelector("[rotate-right]"),
-    rotateBackBtn: document.querySelector("[rotate-back]"),
-    rotateBox: document.querySelector("[flip-card]"),
+    rotateRightBtn: document.getElementById("rotate-right"),
+    rotateBackBtn: document.getElementById("rotate-back"),
+    rotateBox: document.getElementById("flip-card")
+
   };
 
   refs.rotateRightBtn.addEventListener("click", toggleRotate);
@@ -21,9 +22,9 @@
 
 (() => {
   const refs = {
-    rotateRightBtn: document.querySelector("[rotate-right-2]"),
-    rotateBackBtn: document.querySelector("[rotate-back-2]"),
-    rotateBox: document.querySelector("[flip-card-2]"),
+    rotateRightBtn: document.getElementById("rotate-right-2"),
+    rotateBackBtn: document.getElementById("rotate-back-2"),
+    rotateBox: document.getElementById("flip-card-2")
   };
 
   refs.rotateRightBtn.addEventListener("click", toggleRotate);
@@ -40,9 +41,9 @@
 
 (() => {
   const refs = {
-    rotateRightBtn: document.querySelector("[rotate-right-3]"),
-    rotateBackBtn: document.querySelector("[rotate-back-3]"),
-    rotateBox: document.querySelector("[flip-card-3]"),
+    rotateRightBtn: document.getElementById("rotate-right-3"),
+    rotateBackBtn: document.getElementById("rotate-back-3"),
+    rotateBox: document.getElementById("flip-card-3"),
   };
 
   refs.rotateRightBtn.addEventListener("click", toggleRotate);
