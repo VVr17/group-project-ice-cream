@@ -25,15 +25,29 @@
   }
 
   @include mq(desktop) {
+<<<<<<< HEAD
+    background-image: url(../images/about/about-bg_lg@1x.png);
+    background-image: url(../images/about/about-bg_lg@1x.webp);
+
+    // background-image: -webkit-image-set(
+    //   url(../images/about/about-bg_lg@1x.webp) 1x
+    // );
+=======
     background-image: url(../images/about/about-bg_lg1x.png);
     // background-image: -webkit-image-set(url(../images/about/about-bg_lg1x.webp) 1x);
+>>>>>>> main
     background-size: contain;
     background-repeat: no-repeat;
     background-position: top;
 
     @include mq(retina) {
+<<<<<<< HEAD
+      background-image: url(../images/about/about-bg_lg@2x.png);
+      background-image: url(../images/about/about-bg_lg@2x.webp);
+=======
       background-image: url(../images/about/about-bg_lg2x.png);
       //   background-image: -webkit-image-set(url(../images/about/about-bg_lg2x.webp) 2x);
+>>>>>>> main
     }
   }
 }
@@ -72,20 +86,24 @@
     font-size: 12px;
     line-height: 1.62;
 
-    background-image: url(../images/about/about-bg_sm1x.png);
-    background-image: -webkit-image-set(
-      //   url(../images/about/about-bg_sm1x.webp) 1x
-    );
+    background-image: url(../images/about/about-bg_sm@1x.png);
+    background-image: url(../images/about/about-bg_sm@1x.webp);
+
+    // background-image: -webkit-image-set(
+    //    url(../images/about/about-bg_sm1x.webp) 1x
+    // );
+
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     background-position-y: 70px;
 
     @include mq(retina) {
-      background-image: url(../images/about/about-bg_sm2x.png);
-      background-image: -webkit-image-set(
-        // url(../images/about/about-bg_sm2x.webp) 2x
-      );
+      background-image: url(../images/about/about-bg_sm@2x.png);
+      background-image: url(../images/about/about-bg_sm@2x.webp);
+      // background-image: -webkit-image-set(
+      //   url(../images/about/about-bg_sm2x.webp) 2x
+      // );
     }
   }
 
