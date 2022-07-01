@@ -19,6 +19,7 @@
     padding: 15px 15px;
   }
 }
+
 .franchise__backdrop.is-hidden {
   opacity: 0;
   visibility: hidden;
@@ -176,8 +177,8 @@
     fill: var(--accent-color);
   }
 
-  .form-input:hover + &,
-  .form-input:focus + & {
+  .form-input:hover+&,
+  .form-input:focus+& {
     fill: var(--accent-color);
   }
 }
