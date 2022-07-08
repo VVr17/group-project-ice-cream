@@ -79,7 +79,6 @@
 
     background-image: url(../images/about/about-bg_sm1x.png);
     background-image: url(../images/about/about-bg_sm1x.webp);
-
     // background-image: -webkit-image-set(
     //    url(../images/about/about-bg_sm1x.webp) 1x
     // );
@@ -160,13 +159,8 @@
 #content.open {
   max-height: 400px;
   // display: block;
-
   transition: max-height 0.7s;
 }
-
-// .button--about{
-//     margin-bottom: 20px;
-// }
 
 .about__icon {
   margin-left: 15px;

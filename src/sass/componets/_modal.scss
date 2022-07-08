@@ -1,4 +1,4 @@
-@import './modal/modal-slider';
+// @import './modal/modal-slider';
 
 .backdrop {
   position: fixed;
@@ -232,7 +232,6 @@
 .modal-field {
   display: flex;
   flex-direction: column;
-
 
   font-family: var(--main-font);
   font-style: normal;

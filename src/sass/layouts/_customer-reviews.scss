@@ -58,8 +58,8 @@
   @include mq('desktop') {
     max-width: 968px;
     padding-top: 68px;
-    padding-left: 6px;
-    padding-right: 6px;
+    padding-left: 74px;
+    padding-right: 72px;
   }
 }
 
@@ -85,8 +85,8 @@
   }
 
   @include mq('desktop') {
-    padding-right: 72px;
-    padding-left: 74px;
+    padding-right: 35px;
+    padding-left: 36px;
   }
 }
 
