@@ -36,48 +36,46 @@
   max-width: 450px;
   transition: transform 250ms var(--transition-timing);
 
+  transform: scale(1);
+  border-radius: 20px;
+  background: var(--second-background-color);
+  box-shadow: 0px 0px 50px 14px rgba(255, 165, 186, 0.34);
+
   @media screen and (max-width: 479.98px) {
     margin-left: auto;
     margin-right: auto;
   }
 
-  @include mq('mobile') {
+  @media screen and (min-width: 480px) and (orientation: portrait) {
     width: 100%;
     max-width: 450px;
-
-    @media screen and (max-height: 656px) {
-      margin-left: auto;
-      margin-right: auto;
-      position: absolute;
-      top: 0;
-      transform: translate(-50%, 0) scale(1);
-    }
-
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
   }
 
-  @include mq('tablet') {
+  @media screen and (min-width: 480px) and (orientation: landscape) {
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 0;
+    transform: translate(-50%, 0) scale(1);
+  }
+
+  @media screen and (min-width: 768px) and (min-height: 655px) {
     width: 100%;
     max-width: 450px;
     position: absolute;
-
-    @media screen and (max-height: 656px) {
-      top: 0;
-      transform: translate(-50%, 0) scale(1);
-    }
-
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
   }
 
-  transform: scale(1);
-  border-radius: 20px;
-  background: var(--second-background-color);
-  box-shadow: 0px 0px 50px 14px rgba(255, 165, 186, 0.34);
+  @media screen and (min-width: 768px) and (max-height: 656px) {
+    top: 0;
+    transform: translate(-50%, 0) scale(1);
+  }
 }
 
 .modal__open-button {
