@@ -3,7 +3,6 @@
 
 
 const modalSwiper = document.querySelector('.mySwiper1');
-console.log(modalSwiper)
 
 const swiper = new Swiper(modalSwiper, {
   modules: [Navigation],
