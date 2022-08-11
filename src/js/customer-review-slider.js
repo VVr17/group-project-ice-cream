@@ -15,10 +15,4 @@ const swiper = new Swiper(customerReviewSwiper, {
     el: '.swiper-pagination',
   },
 
-  // Navigation arrows
-  // navigation: {
-  //   nextEl: '.swiper-button-next',
-  //   prevEl: '.swiper-button-prev',
-  // },
-
 });
