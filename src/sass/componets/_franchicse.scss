@@ -73,6 +73,7 @@
   @media screen and (min-width: 480px) and (orientation: landscape) {
     max-width: 450px;
     position: relative;
+    margin: auto auto;
     transform: scale(1);
   }
 
@@ -85,6 +86,10 @@
   }
 
   @include mq('desktop') {
+    width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%) scale(1);
   }
 }
@@ -177,8 +182,8 @@
     fill: var(--accent-color);
   }
 
-  .form-input:hover+&,
-  .form-input:focus+& {
+  .form-input:hover + &,
+  .form-input:focus + & {
     fill: var(--accent-color);
   }
 }
