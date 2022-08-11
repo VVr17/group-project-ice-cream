@@ -23,7 +23,23 @@
 }
 
 .backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(0.85);
+  transform: scale(0.85);
+
+  @include mq('mobile') {
+    transform: translate(-50%, -50%) scale(0.85);
+
+    @media screen and (max-height: 656px) {
+      transform: translate(-50%, 0) scale(0.85);
+    }
+  }
+
+  @include mq('tablet') {
+    transform: translate(-50%, -50%) scale(0.85);
+
+    @media screen and (max-height: 656px) {
+      transform: translate(-50%, 0) scale(0.85);
+    }
+  }
 }
 
 .modal {
