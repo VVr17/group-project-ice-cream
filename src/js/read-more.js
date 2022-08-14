@@ -3,7 +3,7 @@ var button = document.getElementById("read-more");
 
 button.onclick = function () {
     if (content.className == "open") {
-        //shrink the box   
+        //shrink the box
         content.className = "";
         button.innerHTML = "Read more";
     } else {
@@ -13,3 +13,4 @@ button.onclick = function () {
     }
 
 };
+
