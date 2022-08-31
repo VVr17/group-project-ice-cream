@@ -10,10 +10,9 @@
     const isBtn = event.target.classList.contains('js-rotateBtn') ||
       event.target.closest('.js-rotateBtn');
 
-    if (!isBtn) {return}
+    if (!isBtn) return;
 
     const cardToRotate = event.target.closest('#flip-card')
-
     cardToRotate.classList.toggle('flip')
   }
 })();

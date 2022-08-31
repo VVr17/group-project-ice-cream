@@ -1,16 +1,20 @@
-var content = document.getElementById("content");
-var button = document.getElementById("read-more");
+(() => {
+  const refs = {
+    content: document.querySelector('#content'),
+    button: document.querySelector('#read-more'),
+  };
 
-button.onclick = function () {
-    if (content.className == "open") {
-        //shrink the box
-        content.className = "";
-        button.innerHTML = "Read more";
+  refs.button.addEventListener('click', onBtnClick);
+
+  function onBtnClick(event) {
+    if (content.className === 'open') {
+      //shrink the box
+      content.className = '';
+      refs.button.childNodes[0].textContent = 'Read more';
     } else {
-        //expand the box
-        content.className = "open";
-        button.innerHTML = "Read less";
+      //expand the box
+      content.className = 'open';
+      refs.button.childNodes[0].textContent = 'Read less';
     }
-
-};
-
+  }
+})();
