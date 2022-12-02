@@ -1,18 +1,16 @@
-(() => {
-  const refs = {
-    productList: document.querySelector('#products-list')
-  };
+const refs = {
+  productList: document.querySelector('#products-list'),
+};
 
-  refs.productList.addEventListener("click", toggleRotate);
+refs.productList.addEventListener('click', toggleRotate);
 
-  function toggleRotate(event) {
+function toggleRotate(event) {
+  const isBtn =
+    event.target.classList.contains('js-rotateBtn') ||
+    event.target.closest('.js-rotateBtn');
 
-    const isBtn = event.target.classList.contains('js-rotateBtn') ||
-      event.target.closest('.js-rotateBtn');
+  if (!isBtn) return;
 
-    if (!isBtn) return;
-
-    const cardToRotate = event.target.closest('#flip-card')
-    cardToRotate.classList.toggle('flip')
-  }
-})();
+  const cardToRotate = event.target.closest('#flip-card');
+  cardToRotate.classList.toggle('flip');
+}

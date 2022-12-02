@@ -6,4 +6,3 @@ import './js/modal-button';
 import './js/modal-slider';
 import './js/products';
 import './js/read-more';
-import './js/scrol';
